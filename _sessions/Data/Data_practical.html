@@ -1,0 +1,786 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<meta charset="utf-8" />
+<meta name="generator" content="pandoc" />
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
+
+
+
+
+<title>Daten</title>
+
+<script src="Data_practical_files/header-attrs-2.6/header-attrs.js"></script>
+<script src="Data_practical_files/jquery-1.11.3/jquery.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="Data_practical_files/bootstrap-3.3.5/css/bootstrap.min.css" rel="stylesheet" />
+<script src="Data_practical_files/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="Data_practical_files/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+<script src="Data_practical_files/bootstrap-3.3.5/shim/respond.min.js"></script>
+<script src="Data_practical_files/navigation-1.1/tabsets.js"></script>
+<link href="Data_practical_files/highlightjs-9.12.0/default.css" rel="stylesheet" />
+<script src="Data_practical_files/highlightjs-9.12.0/highlight.js"></script>
+
+<style type="text/css">
+  code{white-space: pre-wrap;}
+  span.smallcaps{font-variant: small-caps;}
+  span.underline{text-decoration: underline;}
+  div.column{display: inline-block; vertical-align: top; width: 50%;}
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+  ul.task-list{list-style: none;}
+    </style>
+
+<style type="text/css">code{white-space: pre;}</style>
+<style type="text/css">
+  pre:not([class]) {
+    background-color: white;
+  }
+</style>
+<script type="text/javascript">
+if (window.hljs) {
+  hljs.configure({languages: []});
+  hljs.initHighlightingOnLoad();
+  if (document.readyState && document.readyState === "complete") {
+    window.setTimeout(function() { hljs.initHighlighting(); }, 0);
+  }
+}
+</script>
+
+
+
+<style type="text/css">
+h1 {
+  font-size: 34px;
+}
+h1.title {
+  font-size: 38px;
+}
+h2 {
+  font-size: 30px;
+}
+h3 {
+  font-size: 24px;
+}
+h4 {
+  font-size: 18px;
+}
+h5 {
+  font-size: 16px;
+}
+h6 {
+  font-size: 12px;
+}
+.table th:not([align]) {
+  text-align: left;
+}
+</style>
+
+
+<link rel="stylesheet" href="practical.css" type="text/css" />
+
+
+
+<style type = "text/css">
+.main-container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+code {
+  color: inherit;
+  background-color: rgba(0, 0, 0, 0.04);
+}
+img {
+  max-width:100%;
+}
+.tabbed-pane {
+  padding-top: 12px;
+}
+.html-widget {
+  margin-bottom: 20px;
+}
+button.code-folding-btn:focus {
+  outline: none;
+}
+summary {
+  display: list-item;
+}
+</style>
+
+
+
+<!-- tabsets -->
+
+<style type="text/css">
+.tabset-dropdown > .nav-tabs {
+  display: inline-table;
+  max-height: 500px;
+  min-height: 44px;
+  overflow-y: auto;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs > li.active:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
+  content: "&#xe258;";
+  border: none;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs > li.active {
+  display: block;
+}
+
+.tabset-dropdown > .nav-tabs > li > a,
+.tabset-dropdown > .nav-tabs > li > a:focus,
+.tabset-dropdown > .nav-tabs > li > a:hover {
+  border: none;
+  display: inline-block;
+  border-radius: 4px;
+  background-color: transparent;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li {
+  display: block;
+  float: none;
+}
+
+.tabset-dropdown > .nav-tabs > li {
+  display: none;
+}
+</style>
+
+<!-- code folding -->
+
+
+
+
+</head>
+
+<body>
+
+
+<div class="container-fluid main-container">
+
+
+
+
+<div class="fluid-row" id="header">
+
+
+
+<h1 class="title toc-ignore">Daten</h1>
+<h4 class="author"><table style='table-layout:fixed;width:100%;border:0;padding:0;margin:0'>
+<col width='10%'>
+<col width='10%'>
+<tr style="border:none">
+<td style="display:block;width:100%;text-align:left;vertical-align:bottom;padding:0;margin:0;border:none" nowrap>
+<font style='font-style:normal'>Explorative Datenanalyse mit R</font><br> <a href='https://therbootcamp.github.io/EDA_2021Mar/'> <i class='fas fa-clock' style='font-size:.9em;' ></i> </a> <a href='https://therbootcamp.github.io'> <i class='fas fa-home' style='font-size:.9em;'></i> </a> <a href='mailto:therbootcamp@gmail.com'> <i class='fas fa-envelope' style='font-size: .9em;'></i> </a> <a href='https://www.linkedin.com/company/rbootcamp'> <i class='fab fa-linkedin' style='font-size: .9em;'></i> </a> <a href='https://therbootcamp.github.io'> <font style='font-style:normal'>The R Bootcamp</font> </a>
+</td>
+<td style="width:100%;vertical-align:bottom;text-align:right;padding:0;margin:0;border:none">
+<img src='https://raw.githubusercontent.com/therbootcamp/therbootcamp.github.io/master/_sessions/_image/by-sa.png' style='height:15px;width:80px'/>
+</td>
+</tr>
+</table></h4>
+
+</div>
+
+
+<p align="center" width="100%">
+<img src="https://www.methodspace.com/wp-content/uploads/2018/02/Big-data-slider_GEBI.jpg" alt="Trulli" style="width:100%;height:280px"> <br> <font style="font-size:10px">from <a href="https://www.methodspace.com">methodspace.com</a></font>
+</p>
+<div id="section" class="section level1 tabset tabset-fade">
+<h1 class="tabset tabset-fade"></h1>
+<div id="überblick" class="section level2">
+<h2>Überblick</h2>
+<p>In diesem Practical wirst du R’s Datenklassen besser kennenlernen und das Einlesen und Schreiben von Daten üben.</p>
+<p>Am Ende des Practicals wirst du wissen:</p>
+<ol style="list-style-type: decimal">
+<li>Wie man mit Data Frames und Vektoren umgeht.</li>
+<li>Wie man Daten verschiedener Formate einliest und schreibt.</li>
+</ol>
+</div>
+<div id="aufgaben" class="section level2">
+<h2>Aufgaben</h2>
+<div id="a---setup" class="section level3">
+<h3>A - Setup</h3>
+<ol style="list-style-type: decimal">
+<li><p>Öffne dein <code>TheRBootcamp</code> R project. Es sollte die Ordner <code>1_Data</code> und <code>2_Code</code> enthalten.</p></li>
+<li><p>Öffne ein neues R Skript. Schreibe deinen Namen, das Datum und “Daten Practical” als Kommentare an den Anfang des Skripts.</p></li>
+</ol>
+<pre class="r"><code>## NAME
+## DATUM
+## Daten Practical</code></pre>
+<ol start="3" style="list-style-type: decimal">
+<li><p>Speichere das neue Skript unter dem Namen <code>daten_practical.R</code> im <code>2_Code</code> Ordner.</p></li>
+<li><p>Lade die Pakete <code>tidyverse</code>, <code>haven</code>, und <code>readxl</code>. Falls eines der Pakete noch nicht installiert ist, installiere es zunächst mit <code>install.packages("PAKETNAME"s)</code>.</p></li>
+</ol>
+<pre class="r"><code># Pakete laden
+library(tidyverse)
+library(haven)
+library(readxl)</code></pre>
+</div>
+<div id="b---kreiere-vektoren" class="section level3">
+<h3>B - Kreiere Vektoren</h3>
+<p>Die folgende Tabelle zeigt die Daten von fünf hypothetischenn Baselern. Im ersten Teil dieses Practicals ist es zunächst deine Aufgabe diese Tabelle Schritt für Schritt <strong>nachzubauen</strong>.</p>
+<table>
+<caption>Data über 5 Baseler</caption>
+<thead>
+<tr class="header">
+<th align="left">id</th>
+<th align="left">geschlecht</th>
+<th align="left">alter</th>
+<th align="left">groesse</th>
+<th align="left">gewicht</th>
+<th align="left">sex</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">1</td>
+<td align="left">f</td>
+<td align="left">87</td>
+<td align="left">165</td>
+<td align="left"></td>
+<td align="left">F</td>
+</tr>
+<tr class="even">
+<td align="left">2</td>
+<td align="left">m</td>
+<td align="left">54</td>
+<td align="left">175</td>
+<td align="left">86</td>
+<td align="left">M</td>
+</tr>
+<tr class="odd">
+<td align="left">3</td>
+<td align="left">f</td>
+<td align="left">34</td>
+<td align="left">147</td>
+<td align="left">54</td>
+<td align="left">F</td>
+</tr>
+<tr class="even">
+<td align="left">4</td>
+<td align="left">m</td>
+<td align="left">31</td>
+<td align="left">166</td>
+<td align="left">105</td>
+<td align="left">M</td>
+</tr>
+<tr class="odd">
+<td align="left">5</td>
+<td align="left">m</td>
+<td align="left">24</td>
+<td align="left">180</td>
+<td align="left">102</td>
+<td align="left">M</td>
+</tr>
+</tbody>
+</table>
+<ol style="list-style-type: decimal">
+<li>Erstelle zuerst einen numerischen Vektor genannt <code>id</code>, der die <code>id</code> Werte der 5 Baseler Tabelle enthält. Wenn du ihn erstellt hast, printe das Vektor-Objekt. Wann immmer du <code>XX</code> siehst, bedeutet das, dass du etwas an dessen Stelle eintragen sollst. Siehe Tabelle.</li>
+</ol>
+<pre class="r"><code># Erstelle Vektor namens id
+XX &lt;- c(XX, XX, XX, XX, XX)
+
+# Printe den Vektor
+XX</code></pre>
+<ol start="2" style="list-style-type: decimal">
+<li>Verwende die Funktion <code>class()</code>, um zu überprüfen welche Klasse der <code>id</code> Vektor hat. Ist er <code>numeric</code>?</li>
+</ol>
+<pre class="r"><code># Zeige die Klasse von id
+class(XX)</code></pre>
+<ol start="3" style="list-style-type: decimal">
+<li>Verwende die <code>length()</code> Funktion, um die Länge von <code>id</code> zu bestimmen. Hat er die Länge 5? Wenn nicht, stelle sicher, dass du den Vektor korrekt definiert hast.</li>
+</ol>
+<pre class="r"><code># Zeige die Länge des Vektors
+length(XX)</code></pre>
+<ol start="4" style="list-style-type: decimal">
+<li>Kreiere einen Vektor <code>geschlecht</code>, der die entsprechenden Werte aus der Baseler Tabelle enthält. Stelle sicher, dass du Anführungszeichen <code>""</code> um die einzelnen Elemente setzt, damit R weiss, dass es sich um <code>character</code> Werte handelt. Wenn du fertig bist, lasse dir den Vektor anzeigen.</li>
+</ol>
+<pre class="r"><code># Kreiere Vektor geschlecht 
+XX &lt;- c(&quot;XX&quot;, &quot;XX&quot;, &quot;XX&quot;, &quot;XX&quot;, &quot;XX&quot;)</code></pre>
+<ol start="5" style="list-style-type: decimal">
+<li><p>Verwende wiederum die Funktionen <code>class()</code> und <code>length()</code>, um die Klasse (<code>character</code>) und die Länge (5) zu überprüfen?</p></li>
+<li><p>Führe die selben Schritte nun für die Spalten <code>alter</code> und <code>groesse</code> durch.</p></li>
+<li><p>Schaue dir die Spalte <code>gewicht</code> an. Du solltest sehen, dass sie einen fehlenden Wert beinhaltet. Kreiere einen Vektor <code>gewicht</code> mit denselben Schritten wie zuvor. Spezifiziere den fehlenden Wert dabei als <code>NA</code> (ohne Anführungszeichen).</p></li>
+</ol>
+</div>
+<div id="c---kreiere-tibbles" class="section level3">
+<h3>C - Kreiere <code>tibbles</code></h3>
+<ol style="list-style-type: decimal">
+<li>Verwende die Funktion <code>tibble()</code>, um einen data frame namens <code>basel</code> zu erstellen, der die eben erstellten Vektoren enthält, d.h., <code>id</code>, <code>alter</code>, <code>geschlecht</code>, <code>groesse</code>, und <code>gewicht</code>.</li>
+</ol>
+<pre class="r"><code># Kreiere data frame aus den Vektoren
+XX &lt;- tibble(XX, XX, XX, XX, XX, XX) </code></pre>
+<ol start="2" style="list-style-type: decimal">
+<li><p>Printe den data frame. Enthält er alle Vektoren? Welche Ausmasse (Anzahl Zeilen, Spalten) hat der data frame?</p></li>
+<li><p>Verwende die Funktion <code>summary()</code> um deskriptive Statistiken für die Variablen in <code>basel</code> zu erstellen.</p></li>
+<li><p>Verwende den <code>$</code>-Operator, um allein die Variable <code>alter</code> zu printen.</p></li>
+<li><p>Verwende die Funktionen <code>mean()</code>, <code>max()</code>, <code>min()</code>, und <code>median()</code> umd deskriptive Statistiken direkt für die Variable <code>alter</code> zu berechnen</p></li>
+</ol>
+</div>
+<div id="d---lesen-und-schreiben-von-delimiter-separierten-dateien" class="section level3">
+<h3>D - Lesen und Schreiben von Delimiter-separierten Dateien</h3>
+<p>In diesem Abschnitt importierst du den bekannten <code>diamonds</code> Datensatz und bearbeitest ihn.</p>
+<ol style="list-style-type: decimal">
+<li>Finde den Filepath zum <code>diomands.csv</code> Datensatz. Setze hierzu den Cursor zwischen zwei Anführungszeichen <code>""</code> und drücke ⇥ (tab). Speichere den Filepath zunächst in einem eigenen Objekt namens <code>diamonds_path</code>.</li>
+</ol>
+<pre class="r"><code># Setze den Cursor zwischen &quot;&quot; und drücke tab
+diamonds_path &lt;- &quot;&quot;</code></pre>
+<ol start="2" style="list-style-type: decimal">
+<li>Jetzt verwende das Objekt <code>diamonds_path</code> in der Funktion <code>read_csv()</code>, um den Datensatz einzulesen und als neues Objekt <code>diamonds</code> zu speichern. (Der Umweg über das Objekt <code>diamonds_path</code> ist natürlich nicht zwingend nötig. Man kann den Filepath auch direkt als Argument einsetzen.)</li>
+</ol>
+<pre class="r"><code># Lese den diamonds Datensatz ein
+diamonds &lt;- read_csv(file = XX)</code></pre>
+<ol start="3" style="list-style-type: decimal">
+<li><p>Printe den <code>diamonds</code> Datensatz. Inspiziere die Variablennamen. Etwas stimmt nicht, oder?</p></li>
+<li><p>Du kannst das Problem lösen, indem du beim Einlesen einen <code>character</code> Vektor mit Namen dem <code>col_names</code>-Argument zuweist. Der Vektor soll folgende Namen enthalten: <code>karat</code>, <code>cut</code>, <code>farbe</code>, <code>klarheit</code>, <code>tiefe</code>, <code>tabelle</code>, <code>preis</code>.</p></li>
+</ol>
+<pre class="r"><code># lese dimaonds nochmal ein, diesmal mit expliziten Spaltennamen
+diamonds &lt;- read_csv(file = XX, 
+                     col_names = c(&#39;XX&#39;,&#39;XX&#39;, ...))  </code></pre>
+<ol start="5" style="list-style-type: decimal">
+<li><p>Inspeziere den Datensatz. Sind die Spaltennamen nun korrekt?</p></li>
+<li><p>Richte nun deine Aufmerksamkeit auf die Klassen der Variablen. Wurden die Klassen aller Variablen richtig inferiert?</p></li>
+<li><p>Finde heraus was mit der <code>karat</code> Variable passiert ist. Wähle die <code>karat</code> Variable aus und schaue dir die Werte genau an. <strong>Zwischen dem 10. und 20. Eintrag</strong> solltest du eine Irregularität erkennen, die dafür verantwortlich ist, dass die Variable als <code>character</code> anstatt als <code>numeric</code> erkannt wurde.</p></li>
+<li><p>Ersetze den falsch formatierten Wert in <code>karat</code> indem du unten im Code <code>XX</code> durch die Position (Zahl zwischen 10 und 20) des falschen Wertes ersetzt und <code>YY</code> mit dem korrekten Wert mit <code>.</code> anstatt <code>,</code>.</p></li>
+</ol>
+<pre class="r"><code># Ersetze den falschen Wert
+diamonds$karat[XX] &lt;- YY</code></pre>
+<ol start="9" style="list-style-type: decimal">
+<li>Jetzt hast du den Wert ausgebessert, aber <code>karat</code> ist immer noch <code>character</code>. Verwende die Funktion <code>type_convert()</code> um dies zu beheben. Siehe unten.</li>
+</ol>
+<pre class="r"><code># Re-inferiere Datentypen
+diamonds &lt;- type_convert(diamonds)</code></pre>
+<ol start="10" style="list-style-type: decimal">
+<li><p>Printe <code>diamonds</code>, um sicher zu stellen, dass <code>karat</code> jetzt <code>numeric</code> ist, bzw. <code>dbl</code> (ein Fall von <code>numeric</code>).</p></li>
+<li><p>Nachdem du nun Spaltennamen und die Klassen korrigiert hast, schreibe den Datensatz wieder auf die Festplatte als <code>diamonds_sauber.csv</code> mit der Funktion <code>write_csv()</code>.</p></li>
+</ol>
+<pre class="r"><code># Schreibe den sauberen diamonds Datensatz 
+write_csv(x = XX, path = &quot;XX/XX.csv&quot;)</code></pre>
+<ol start="12" style="list-style-type: decimal">
+<li><p>Um sicherzustellen, dass nicht wieder die selben Probleme auftreten, lese <code>diamonds_clean.csv</code> wieder ein und schaue dir die Spaltennamen und die Spaltentypen an. Alles in Ordnung?</p></li>
+<li><p>Jetzt wäre der Datensatz fertig für die Analyse. Wenn du magst, exploriere ihn ein wenig. Berechne deskriptive Statistiken (<code>mean()</code>, <code>median()</code>, etc.) für die verschiedenen Variablen. Du kannst mehr über die Variablen erfahren mit <code>?diamonds</code>. (Namen sind aus dem Englischen übersetzt.)</p></li>
+</ol>
+</div>
+<div id="e---logische-vektoren" class="section level3">
+<h3>E - Logische Vektoren</h3>
+<ol style="list-style-type: decimal">
+<li>Logische Vektoren enthalten nur die Werte <code>TRUE</code> und <code>FALSE</code> (und <code>NA</code>s). Kreiere einen logischen Vektor names <code>teuer</code>, welcher <code>TRUE</code> enthält, wenn der <code>preis</code> des Diamanten teurer als $10,000 ist, und <code>FALSE</code>, wenn er günstiger ist. Siehe Code template</li>
+</ol>
+<pre class="r"><code># Kreiere Vektor teuer
+ZZ &lt;- diamonds$XX &gt; YY</code></pre>
+<ol start="2" style="list-style-type: decimal">
+<li><p>Printe den <code>teuer</code> Vektor. Er sollte nur <code>TRUE</code> und <code>FALSE</code> enthalten. Falls ja, decken sich die ersten Werte in <code>preis</code> mit den Werten in <code>teuer</code>?</p></li>
+<li><p>Erweitere den Datensatz um die neue Variable <code>teuer</code>.</p></li>
+</ol>
+<pre class="r"><code># Ergänze Vektor
+XX$YY &lt;- ZZ</code></pre>
+<ol start="4" style="list-style-type: decimal">
+<li><p>Verwende die Funktion <code>table()</code>, um auszuzählen wie viele Diamanten teuer sind. Benutze hierzu wiederum den <code>$</code>-Operator um die Variable auszuwählen.</p></li>
+<li><p>Verwende die <code>mean()</code> Funktion, um auszuzählen welcher Anteil teuer ist. Erinnere, <code>mean()</code> funktioniert auch mit logischen Vektoren.</p></li>
+<li><p>Verwende sowohl einen logischen Vergleich, <code>&gt;</code> oder <code>&lt;</code>, als auch die <code>mean()</code> Funktion, um zu bestimmen welcher Anteil Diamanten mehr als 1 Karat besitzt.</p></li>
+</ol>
+</div>
+<div id="f---einlesen-anderer-formate" class="section level3">
+<h3>F - Einlesen Anderer Formate</h3>
+<div id="excel" class="section level4">
+<h4>Excel</h4>
+<p><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/86/Microsoft_Excel_2013_logo.svg/2000px-Microsoft_Excel_2013_logo.svg.png" width="8%" style="display: block; margin: auto auto auto 0;" /></p>
+<p>In diesem Abschnitt liest du den ebenfalls sehr bekannten <code>titanic</code> Datensatz aus einem Excel Format und speicherst die Daten als <code>.csv</code>.</p>
+<ol style="list-style-type: decimal">
+<li>Verwende die <code>read_excel()</code> Funktion, um den Datensatz <code>titanic.xls</code> als ein neues Objekt <code>titanic</code> einzulesen.</li>
+</ol>
+<pre class="r"><code># Lese titanic.xls
+titanic &lt;- read_excel(path = &quot;XX&quot;)</code></pre>
+<ol start="2" style="list-style-type: decimal">
+<li><p>Printe <code>titanic</code> und evaluiere die Ausmasse des Datensatzes mit <code>dim()</code>.</p></li>
+<li><p>Verwende <code>table()</code> um auszuzählen wie viele Leute das Unglück der Titanic überlebt haben (Variable <code>survived</code>).</p></li>
+</ol>
+<pre class="r"><code># Wie viele haben überlebt?
+table(titanic$XX)</code></pre>
+<ol start="4" style="list-style-type: decimal">
+<li>Verwende nochmals <code>table()</code>, um auszuzählen wie viele Leute in jeder der einzelnen Passagierklassen (Variable <code>pclass</code>) das Unglück der Titanic überlebt haben.</li>
+</ol>
+<pre class="r"><code># Wie viele haben pro Passagierklasse überlebt?
+table(titanic$XX, titanic$XX)</code></pre>
+<ol start="5" style="list-style-type: decimal">
+<li>Verwende <code>write_csv()</code>, um den Datensatz <code>titanic</code> als <code>.csv</code> auf in deinen <code>1_Data</code> Ordner zu schreiben.</li>
+</ol>
+</div>
+<div id="spss" class="section level4">
+<h4>SPSS</h4>
+<p><img src="http://www.sqlearn.gr/wp-content/uploads/2010/12/2000px-SPSS_logo.jpg" width="8%" style="display: block; margin: auto auto auto 0;" /></p>
+<p>In diesem Abschnitt liest du den <code>sleep</code> Datensatz, welcher Informationen über das Schlafverhalten der Mitarbeiter der Universität Melbourne enthält, aus einem SPSS-Format ein und speicherst die ihn im <code>.csv</code>-Format.</p>
+<ol style="list-style-type: decimal">
+<li>Verwende die <code>read_spss()</code> Funktion, um den Datensatz <code>sleep.sav</code> als ein neues Objekt <code>sleep</code> einzulesen.</li>
+</ol>
+<pre class="r"><code>XX &lt;- read_spss(file = &quot;XX&quot;)</code></pre>
+<ol start="2" style="list-style-type: decimal">
+<li><p>Printe <code>sleep</code> und evaluiere die Ausmasse des Datensatzes mit <code>dim()</code>. Du wirst sehen, R war so clever die Labels der Variablen mit zu übernehmen.</p></li>
+<li><p>Verwende die <code>mean()</code> Funktion um auszuzählen wie viele alkoholische Getränke die Mitarbeiter im Durchschnitt pro Tag zu sich nehmen (Variable <code>alchohol</code>; Typo im Originaldatensatz). Achte auf etwaige fehlende Werte!</p></li>
+<li><p>Verwende <code>write_csv()</code> um den Datensatz <code>sleep</code> als <code>.csv</code> auf in deinen <code>1_Data</code> Ordner zu schreiben.</p></li>
+</ol>
+</div>
+</div>
+</div>
+<div id="beispiele" class="section level2">
+<h2>Beispiele</h2>
+<pre class="r"><code>library(tidyverse)
+library(readxl)
+library(haven)
+
+# Kreiere Vektoren für (falsche) Aktiendaten
+name      &lt;- c(&quot;apple&quot;, &quot;microsoft&quot;, &quot;dell&quot;, &quot;google&quot;, &quot;twitter&quot;)
+gestern &lt;- c(100, 89, 65, 54, 89)
+heute     &lt;- c(102, 85, 72, 60, 95)
+
+# Deskriptive Statistiken
+mean(heute)
+mean(gestern)
+
+# Zeige Klassen
+class(name)
+class(gestern)
+
+# Rechne mit Vektoren
+change &lt;- heute - gestern
+change # Printe Resultat
+
+# Verwende einen logischen Vektor
+increase &lt;- heute &gt; gestern
+increase # Printe Resultat
+
+# Kreiere einen tibble aus den Vektoren
+stocks &lt;- tibble(name, gestern, heute, change, increase)
+
+# Zeige Spaltennamen
+names(stocks)
+
+# Wähle Variablen aus
+stocks$name
+stocks$today
+
+# Berechne deskriptive Werte
+mean(stocks$yesterday)
+median(stocks$today)
+table(stocks$increase)
+max(stocks$increase)
+
+
+# Lese/Schreibe Delimiter-separierte Werte -------------------
+
+# lese chickens Daten
+chickens &lt;- read_csv(file = &quot;1_Data/chickens.csv&quot;)
+
+# Korrigiere die Spaltennamen
+chickens &lt;- read_csv(file = &quot;1_Data/chickens_nohead.csv&quot;,
+                     col_names = c(&quot;weight&quot;, &quot;time&quot;, &quot;chick&quot;, &quot;diet&quot;))
+
+# Korrigiere NA Werte beim einlesen
+chickens &lt;- read_csv(file = &quot;1_Data/chickens_na.csv&quot;,
+                     na = c(&#39;NA&#39;, &#39;NULL&#39;))
+
+# Schreibe saubere Daten 
+write_csv(x = chickens, 
+          path = &quot;1_Data/chickens_sauber.csv&quot;)
+
+# Korrogiere einzelne Werte -------------------
+
+# remove character from rating
+survey$beurteilung[survey$beurteilung == &quot;2,1&quot;] &lt;- 2.1
+
+# Re-inferiere die Datentypen
+survey &lt;- type_convert(survey)
+
+# Andere Formate -------------------
+
+# .xlsx (Excel)
+chickens &lt;- read_excel(&quot;1_Data/chickens.xlsx&quot;)
+
+# .sav (SPSS)
+chickens &lt;- read_spss(&quot;1_Data/chickens.sav&quot;)</code></pre>
+</div>
+<div id="datensätze" class="section level2">
+<h2>Datensätze</h2>
+<table>
+<colgroup>
+<col width="8%" />
+<col width="10%" />
+<col width="11%" />
+<col width="70%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th align="left">Datei</th>
+<th align="left">Zeilen</th>
+<th align="left">Spalten</th>
+<th align="left">Beschreibung</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left"><a href="https://raw.githubusercontent.com/therbootcamp/BaselRBootcamp_2018July/master/_sessions/_data/baselrbootcamp_data/diamonds.csv">diamonds.csv</a></td>
+<td align="left">100</td>
+<td align="left">7</td>
+<td align="left">Bestandteil aus dem bekannten <code>diamonds</code> Datensatz, welcher die Eigenschaften und Preise einer grossen Anzahl Diamanten enthält.</td>
+</tr>
+<tr class="even">
+<td align="left"><a href="https://raw.githubusercontent.com/therbootcamp/BaselRBootcamp_2018July/master/_sessions/_data/baselrbootcamp_data/titanic.xls">titanic.xls</a></td>
+<td align="left">1309</td>
+<td align="left">14</td>
+<td align="left">Daten über die Überlebenden und Verstorbenen des Titanic Unglücks.</td>
+</tr>
+<tr class="odd">
+<td align="left"><a href="https://raw.githubusercontent.com/therbootcamp/BaselRBootcamp_2018July/master/_sessions/_data/baselrbootcamp_data/sleep.sav">sleep.sav</a></td>
+<td align="left">271</td>
+<td align="left">55</td>
+<td align="left">Survey über das Schlafverhalten der Mitarbeiter der Universität Melbourne.</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="funktionen" class="section level2">
+<h2>Funktionen</h2>
+<div id="pakete" class="section level3">
+<h3>Pakete</h3>
+<table>
+<thead>
+<tr class="header">
+<th align="left">Paket</th>
+<th align="left">Installation</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left"><code>tidyverse</code></td>
+<td align="left"><code>install.packages("tidyverse")</code></td>
+</tr>
+<tr class="even">
+<td align="left"><code>haven</code></td>
+<td align="left"><code>install.packages("haven")</code></td>
+</tr>
+<tr class="odd">
+<td align="left"><code>readxl</code></td>
+<td align="left"><code>install.packages("readxl")</code></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="funktionen-1" class="section level3">
+<h3>Funktionen</h3>
+<p><em>Kreiere Vektoren</em></p>
+<table>
+<thead>
+<tr class="header">
+<th align="left">Funktion</th>
+<th align="left">Beschreibung</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left"><code>c("a", "b", "c")</code></td>
+<td align="left">Kreiere <code>character</code> Vektor</td>
+</tr>
+<tr class="even">
+<td align="left"><code>c(1, 2, 3)</code></td>
+<td align="left">Kreiere <code>numeric</code> Vektor</td>
+</tr>
+<tr class="odd">
+<td align="left"><code>c(TRUE, FALSE, TRUE)</code></td>
+<td align="left">Kreiere <code>logical</code> Vektor</td>
+</tr>
+</tbody>
+</table>
+<p><em>Vektor Funktionen</em></p>
+<table>
+<colgroup>
+<col width="43%" />
+<col width="56%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th align="left">Funktion</th>
+<th align="left">Beschreibung</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left"><code>mean(x), median(x), sd(x), sum(x)</code></td>
+<td align="left">Mittelwert, Median, Standardabweichung, Summe</td>
+</tr>
+<tr class="even">
+<td align="left"><code>max(x), min(x)</code></td>
+<td align="left">Maximum, Minimum</td>
+</tr>
+<tr class="odd">
+<td align="left"><code>table(x)</code></td>
+<td align="left">Höufigkeitstabelle</td>
+</tr>
+</tbody>
+</table>
+<p><em>Zugriff auf Variablen in Data Frames</em></p>
+<table>
+<thead>
+<tr class="header">
+<th align="left">Funktion</th>
+<th align="left">Beschreibung</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left"><code>df$name</code></td>
+<td align="left">Greife auf Variable (Vektor) <code>name</code> aus dem data frame <code>df</code> zu</td>
+</tr>
+</tbody>
+</table>
+<p><em>Lese/Schreibe Textdateien</em></p>
+<table>
+<thead>
+<tr class="header">
+<th align="left">Dateiendung</th>
+<th align="left">Dateityp</th>
+<th align="left">Lesen</th>
+<th align="left">Schreiben</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left"><code>.csv</code></td>
+<td align="left">Komma-separierte Textdatei</td>
+<td align="left"><code>read_csv(file)</code></td>
+<td align="left"><code>write_csv(x, file)</code></td>
+</tr>
+<tr class="even">
+<td align="left"><code>.csv</code></td>
+<td align="left">Semi-colon separierte Textdatei</td>
+<td align="left"><code>read_csv2(file)</code></td>
+<td align="left"><em>not available</em></td>
+</tr>
+<tr class="odd">
+<td align="left"><code>.txt</code></td>
+<td align="left">Andere Textdatei</td>
+<td align="left"><code>read_delim(file)</code></td>
+<td align="left"><code>write_delim(x, file)</code></td>
+</tr>
+</tbody>
+</table>
+<p><em>Lese/Schreibe andere Formate</em></p>
+<table>
+<thead>
+<tr class="header">
+<th align="left">Dateiendung</th>
+<th align="left">Dateityp</th>
+<th align="left">Lesen</th>
+<th align="left">Schreiben</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left"><code>.xls</code>, <code>.xlsx</code></td>
+<td align="left">Excel</td>
+<td align="left"><code>read_excel(file)</code></td>
+<td align="left"><code>xlsx::write.xlsx()</code></td>
+</tr>
+<tr class="even">
+<td align="left"><code>.sav</code></td>
+<td align="left">SPSS</td>
+<td align="left"><code>read_spss(file)</code></td>
+<td align="left"><code>write_spss(x, file)</code></td>
+</tr>
+</tbody>
+</table>
+<p><em>Kreiere data frames</em></p>
+<table>
+<thead>
+<tr class="header">
+<th align="left">Function</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left"><code>tibble(a, b, c)</code></td>
+<td align="left">Kreiere <code>tibble</code> data frame mit den Vektoren a, b, c</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div id="resourcen" class="section level2">
+<h2>Resourcen</h2>
+<ul>
+<li>Für eine formale Einführung zu den Grundlagen schaut euch <a href="https://cran.r-project.org/doc/manuals/r-release/R-intro.html">introduction to R</a> an.</li>
+<li>Für alles zu <code>tibble</code>s, Daten Lesen und Schreiben schaut euch Grolemund`s und Wickham’s <a href="http://r4ds.had.co.nz/data-import.html">R for Data Science</a> an.</li>
+</ul>
+</div>
+</div>
+
+
+
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+function bootstrapStylePandocTables() {
+  $('tr.odd').parent('tbody').parent('table').addClass('table table-condensed');
+}
+$(document).ready(function () {
+  bootstrapStylePandocTables();
+});
+
+
+</script>
+
+<!-- tabsets -->
+
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+
+$(document).ready(function () {
+  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+    $(this).parent().toggleClass('nav-tabs-open')
+  });
+});
+</script>
+
+<!-- code folding -->
+
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+</body>
+</html>
