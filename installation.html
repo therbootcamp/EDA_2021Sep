@@ -9,10 +9,10 @@
 
     <div align="center">
       <div id="header" align=left style="display:inline-block;width:100%">
-        <h1 width=100%>Reporting mit R</h1>
+        <h1 width=100%>Explorative Datenanalyse mit R</h1>
         <span style="white-space: nowrap">
           <a href='https://therbootcamp.github.io'><i class='fas fa-home'></i></a>
-          <a href='https://therbootcamp.github.io/RmR_2021Feb/'><i class='fas fa-clock'></i></a>
+          <a href='https://therbootcamp.github.io/EDA_2021Sep/'><i class='fas fa-clock'></i></a>
           <a href='mailto:therbootcamp@gmail.com'><i class='fas fa-envelope'></i></a>
           <a href='https://www.linkedin.com/company/basel-r-bootcamp/'><i class='fab fa-linkedin'></i></a>
           <a href='https://therbootcamp.github.io'>
@@ -22,7 +22,7 @@
         <br>
         <span style="white-space: nowrap">
           <img src='https://raw.githubusercontent.com/therbootcamp/therbootcamp.github.io/master/_sessions/_image/by-sa.png' style= 'height:2rem; vertical-align:baseline'/>
-          <font style='font-size:2rem;font-style:normal;padding-left:8px'>Februar 2021</font>
+          <font style='font-size:2rem;font-style:normal;padding-left:8px'>September 2021</font>
         <span>
     </div>
 
@@ -42,12 +42,12 @@
             Verwende die folgenden Links um die aktuellen Versionen von R und RStudio zu installieren.<br><br>
 
             <b>Installiere Base-R</b>:
-            <a href="https://cloud.r-project.org/bin/windows/base/R-4.0.4-win.exe">R 4.0.4 (Windows)</a>,
-            <a href="https://cloud.r-project.org/bin/macosx/R-4.0.4.pkg">R 4.0.4 (Mac)</a><br>
+            <a href="https://cran.r-project.org/bin/windows/base/R-4.1.1-win.exe">Windows</a>,
+            <a href="https://cran.r-project.org/bin/macosx/base/R-4.1.1.pkg">Mac (Intel)</a><br>
 
             <b>Install RStudio</b>:
-            <a href="https://download1.rstudio.org/desktop/windows/RStudio-1.4.1103.exe">RStudio 1.4 (Windows)</a>,
-            <a href="https://download1.rstudio.org/desktop/macos/RStudio-1.4.1103.dmg">RStudio 1.4 (Mac)</a>
+            <a href="https://download1.rstudio.org/desktop/windows/RStudio-1.4.1717.exe">Windows</a>,
+            <a href="https://download1.rstudio.org/desktop/macos/RStudio-1.4.1717.dmg">Mac</a>
           </h4>
           </td>
         </tr>
@@ -61,7 +61,7 @@
             <h4>
             In diese, Workshop werden wir verschieden R Pakete verwenden, die installiert sein müssen. Bitte führe den folgenden Code in deiner R Console in RStudio aus:<br><br>
 
-            source('http://bit.ly/EDmR_2021Mar')<br><br>
+            source('https://bit.ly/EDA_2021Sep')<br><br>
 
             Wenn Du gefragt wirst, ob du Pakete from source installieren möchtest, gebe <b>n</b> ein und drücke Enter. <br><br>
           </h4>
@@ -75,9 +75,9 @@
           <td align=left>
             <h2>3 - Optional: Zusätzliche Software installieren</h2>
             <h4>
-            Falls du Pakete kompilieren (from source) möchtest, oder das Installationsskript aus 2) Fehlermeldungen anzeigt, installiere bitte die folgende Software:<br><br>
+            Falls Installationsskript aus 2) Fehlermeldungen anzeigt (oder du Pakete from source kompilieren möchtest), installiere bitte folgende Software und lasse das Skript nochmal laufen:<br><br>
 
-            Windows: <a href="https://cran.r-project.org/bin/windows/Rtools/rtools40-x86_64.exe">RTools</a><br>
+            Windows: <a href="https://cran.r-project.org/bin/windows/Rtools/rtools40v2-x86_64.exe">RTools</a><br>
             Mac: <a href="https://developer.apple.com/download/more/">Command line tools</a> (kein direkter Link verfügbar)
 
           </h4>
@@ -85,13 +85,53 @@
         </tr>
       </table>
 
+      <table width=50% cellspacing=0 cellpadding=0 class="downloads">
+        <col width=100%>
+        <tr>
+          <td align=left>
+            <h2>4 - Zoom</h2>
+            <h4>
+            Falls Installationsskript aus 2) Fehlermeldungen anzeigt (oder du Pakete from source kompilieren möchtest), installiere bitte folgende Software und lasse das Skript nochmal laufen:<br><br>
+
+            Wir werden den Kurs über die Software Zoom abhalten. Zoom ist vergleichbar zu Skype liefert aber eine etwas stabilere Verbindung, sowie einige Tools die das Abhalten von Webinars erleichtern, beispielsweise breakout rooms.
+
+            Bitte registriert Euch (kostenlos) auf https://zoom.us/de-de/freesignup.html,  ladet auf https://zoom.us/download#client_4meeting die Zoom App herunter und führt die Installation durch. Falls eine Installation der Software nicht möglich ist, gibt es auch die Möglichkeit Zoom über den Browser beizutreten.
+
+            Während der Veranstaltung befinden wir uns, abgesehen von einer halbstündigen Pause, durchgehend in einem Hauptkanal, den wir während kurzer praktischer Übungen in sogenannte Breakout Rooms aufteilen, um Euch bei Bedarf persönliche Betreuung zu bieten. Während der gesamten Veranstaltung bitten wir Euch das Video ein-, und das Mikrofon ausgeschaltet zu lassen. Ihr könnt selbstverständlich, wenn Ihr mögt, unter im Einstellungsmenu der App einen Hintergrund setzen um Eure Privatsphäre zu schützen. Um während der Veranstaltung Fragen zu stellen oder anderweitig mündlich etwas beizutragen, schaltet einfach (mit Leertaste) vorübergehend Euer Mikrofon an.
+
+            Wir fangen pünktlich um 09.00 Uhr an. Bitte findet Euch bereits 10 Minuten vorher im Zoom Meeting ein, um noch allenfalls auftretende technische Schwierigkeiten ausräumen zu können. Den Link zum Zoom meeting findet Ihr auf der Kursseite.
+
+          </h4>
+          </td>
+        </tr>
+      </table>
+
+      <table width=50% cellspacing=0 cellpadding=0 class="downloads">
+        <col width=100%>
+        <tr>
+          <td align=left>
+            <h2>5 - Kursseite & Materialien</h2>
+            <h4>
+              Unter diesem Link: https://therbootcamp.github.io/I2R_2021Aug/ findet Ihr die Kursseite mit allen Materialien und dem Link zum Zoom meeting.
+
+              Bitte ladet vor Kursbeginn das <a href="https://www.dropbox.com/s/ykbgkcesjldgix9/TheRBootcamp.zip?dl=1">Projekt</a> herunter, entpackt es (Doppelklick), und bewegt den darin enthaltenen Ordner “TheRBootcamp” auf den Desktop oder in einen anderen Ordner Eurer Wahl. 
+          </h4>
+          </td>
+        </tr>
+      </table>
+
+
       <br><br>
+
+
+
+
 
 
       <table width=50% cellspacing=0 cellpadding=0 class="zoom">
         <tr>
           <td>
-            <a href="https://therbootcamp.github.io/RmR_2021Feb/" style="display:block;height:100%;width:100%">
+            <a href="https://therbootcamp.github.io/EDA_2021Sep/" style="display:block;height:100%;width:100%">
               <div style="display:table;height:60px;width:100%">
                <div style="display:table-cell;vertical-align:middle;text-align:center;width:100%;color:black"><h4>Zurück</h4></div>
              </div>
