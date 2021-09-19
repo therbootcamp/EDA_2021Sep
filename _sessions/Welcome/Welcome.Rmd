@@ -3,7 +3,7 @@ title: "Willkommen"
 author: "Explorative Datenanalyse mit R<br>
   <a href='https://therbootcamp.github.io'>The R Bootcamp</a>
   <br>
-  <a href='https://therbootcamp.github.io/EDA_2021Mar/'>
+  <a href='https://therbootcamp.github.io/EDA_2021Sep/'>
     <i class='fas fa-clock' style='font-size:.9em;'></i>
   </a>&#8239; 
   <a href='https://therbootcamp.github.io'>
@@ -15,7 +15,7 @@ author: "Explorative Datenanalyse mit R<br>
   <a href='https://www.linkedin.com/company/basel-r-bootcamp/'>
     <i class='fab fa-linkedin' style='font-size: .9em;'></i>
   </a>"
-date: "März 2021"
+date: "September 2021"
 output:
   xaringan::moon_reader:
     css: ["default", "baselrbootcamp.css"]
@@ -43,7 +43,7 @@ layout: true
     </a>
     <a href="https://therbootcamp.github.io/">
       <font color="#7E7E7E">
-       Explorative Datenanalyse mit R | März 2021
+       Explorative Datenanalyse mit R | September 2021
       </font>
     </a>
     </span>
@@ -106,9 +106,7 @@ knitr::opts_chunk$set(fig.align = 'center')
 <font style="font-size:10px">from <a href="https://news.efinancialcareers.com/sg-en/3001517/data-science-careers-finance">efinancialcareers.com</a></font>
 </p>
 
---->
 
----
 
 # Data Science’s missverstandener Held
 
@@ -136,7 +134,6 @@ Chief Decision Scientist at Google
 
 ]
 
----
 
 # Exploration in Maschinellem Lernen
 
@@ -167,6 +164,8 @@ Chief Decision Scientist at Google
 <b>Andrew Ng</b>, Founder and CEO of Landing AI
 
 ]
+
+--->
 
 ---
 
@@ -365,4 +364,4 @@ Chief Decision Scientist at Google
 ---
 class: middle, center
 
-<h1><a href=https://therbootcamp.github.io/EDA_2020Sep/index.html>Agenda</a></h1>
+<h1><a href=https://therbootcamp.github.io/EDA_2021Sep/index.html>Agenda</a></h1>

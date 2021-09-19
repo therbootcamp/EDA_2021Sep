@@ -13,8 +13,8 @@
 class: center, middle, inverse, title-slide
 
 # Daten
-### Explorative Datenanalyse mit R<br> <a href='https://therbootcamp.github.io'>The R Bootcamp</a> <br> <a href='https://therbootcamp.github.io/EDA_2021Mar/'> <i class='fas fa-clock' style='font-size:.9em;'></i> </a>  <a href='https://therbootcamp.github.io'> <i class='fas fa-home' style='font-size:.9em;' ></i> </a>  <a href='mailto:therbootcamp@gmail.com'> <i class='fas fa-envelope' style='font-size: .9em;'></i> </a>  <a href='https://www.linkedin.com/company/basel-r-bootcamp/'> <i class='fab fa-linkedin' style='font-size: .9em;'></i> </a>
-### März 2021
+### Explorative Datenanalyse mit R<br> <a href='https://therbootcamp.github.io'>The R Bootcamp</a> <br> <a href='https://therbootcamp.github.io/EDA_2021Sep/'> <i class='fas fa-clock' style='font-size:.9em;'></i> </a>  <a href='https://therbootcamp.github.io'> <i class='fas fa-home' style='font-size:.9em;' ></i> </a>  <a href='mailto:therbootcamp@gmail.com'> <i class='fas fa-envelope' style='font-size: .9em;'></i> </a>  <a href='https://www.linkedin.com/company/basel-r-bootcamp/'> <i class='fab fa-linkedin' style='font-size: .9em;'></i> </a>
+### September 2021
 
 ---
 
@@ -35,7 +35,7 @@ layout: true
     &lt;/a&gt;
     &lt;a href="https://therbootcamp.github.io/"&gt;
       &lt;font color="#7E7E7E"&gt;
-       Explorative Datenanalyse mit R | März 2021
+       Explorative Datenanalyse mit R | September 2021
       &lt;/font&gt;
     &lt;/a&gt;
     &lt;/span&gt;
@@ -127,7 +127,7 @@ basel
 ```
 
 ```
-## # A tibble: 10,000 x 20
+## # A tibble: 10,000 × 20
 ##      id geschlecht alter groesse gewicht
 ##   &lt;dbl&gt; &lt;chr&gt;      &lt;dbl&gt;   &lt;dbl&gt;   &lt;dbl&gt;
 ## 1     1 W             44    174     NA  
@@ -135,8 +135,7 @@ basel
 ## 3     3 M             31    168     53.9
 ## 4     4 M             31    166.   105  
 ## 5     5 M             24    180.   102. 
-## # … with 9,995 more rows, and 15 more
-## #   variables
+## # … with 9,995 more rows
 ```
 ]
 
@@ -224,7 +223,7 @@ basel
 ```
 
 ```
-## # A tibble: 10,000 x 20
+## # A tibble: 10,000 × 20
 ##      id geschlecht alter groesse gewicht
 ##   &lt;dbl&gt; &lt;chr&gt;      &lt;dbl&gt;   &lt;dbl&gt;   &lt;dbl&gt;
 ## 1     1 W             44    174     NA  
@@ -232,8 +231,7 @@ basel
 ## 3     3 M             31    168     53.9
 ## 4     4 M             31    166.   105  
 ## 5     5 M             24    180.   102. 
-## # … with 9,995 more rows, and 15 more
-## #   variables
+## # … with 9,995 more rows
 ```
 
 ]
@@ -669,7 +667,7 @@ basel
 ```
 
 ```
-## # A tibble: 10,000 x 20
+## # A tibble: 10,000 × 20
 ##      id geschlecht alter groesse
 ##   &lt;dbl&gt; &lt;chr&gt;      &lt;dbl&gt;   &lt;dbl&gt;
 ## 1     1 f             87    165 
@@ -677,8 +675,7 @@ basel
 ## 3     3 f             34    147.
 ## 4     4 m             31    166.
 ## 5     5 m             24    180.
-## # … with 9,995 more rows, and 16
-## #   more variables
+## # … with 9,995 more rows
 ```
 
 ]
@@ -722,7 +719,7 @@ basel
 ```
 
 ```
-## # A tibble: 10,000 x 20
+## # A tibble: 10,000 × 20
 ##      id geschlecht alter groesse
 ##   &lt;dbl&gt; &lt;chr&gt;      &lt;dbl&gt;   &lt;dbl&gt;
 ## 1     1 f             87    165 
@@ -730,8 +727,7 @@ basel
 ## 3     3 f             34    147.
 ## 4     4 m             31    166.
 ## 5     5 m             24    180.
-## # … with 9,995 more rows, and 16
-## #   more variables
+## # … with 9,995 more rows
 ```
 
 ]
@@ -806,19 +802,20 @@ basel &lt;- read_csv("1_Data/basel.csv")
 ```
 
 ```
-## Parsed with column specification:
-## cols(
-##   .default = col_double(),
-##   geschlecht = col_character(),
-##   bildung = col_character(),
-##   konfession = col_character(),
-##   fasnacht = col_character(),
-##   sehhilfe = col_character()
-## )
+## Rows: 10000 Columns: 20
 ```
 
 ```
-## See spec(...) for full column specifications.
+## ── Column specification ────────────────
+## Delimiter: ","
+## chr  (5): geschlecht, bildung, konfe...
+## dbl (15): id, alter, groesse, gewich...
+```
+
+```
+## 
+## ℹ Use `spec()` to retrieve the full column specification for this data.
+## ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
 ```
 
 ]
@@ -919,7 +916,7 @@ basel
 ```
 ## # Source:   table&lt;basel&gt; [?? x 20]
 ## # Database: mysql 5.7.26-log-cll-lve
-## #   [studiech_rbootca@studie.ch:/studiech_rbootcamp]
+## #   [@studie.ch:/studiech_rbootcamp]
 ##      id geschlecht alter_jahre groesse
 ##   &lt;dbl&gt; &lt;chr&gt;            &lt;dbl&gt;   &lt;dbl&gt;
 ## 1     1 f                   87    165 
@@ -927,8 +924,7 @@ basel
 ## 3     3 f                   34    147.
 ## 4     4 m                   31    166.
 ## 5     5 m                   24    180.
-## # … with more rows, and 16 more
-## #   variables
+## # … with more rows
 ```
 
 ]
@@ -986,20 +982,20 @@ read_html("https://en.wikipedia.org/wiki/R_(programming_language)") %&gt;%
 ```
 
 ```
-## # A tibble: 21 x 3
+## # A tibble: 22 × 3
 ##    Release Date        Description                                                        
 ##    &lt;chr&gt;   &lt;chr&gt;       &lt;chr&gt;                                                              
 ##  1 0.16    ""          "This is the last alpha version developed primarily by Ihaka and G…
 ##  2 0.49    "1997-04-2… "This is the oldest source release which is currently available on…
 ##  3 0.60    "1997-12-0… "R becomes an official part of the GNU Project. The code is hosted…
 ##  4 0.65.1  "1999-10-0… "First versions of update.packages and install.packages functions …
-##  5 1.0     "2000-02-2… "Considered by its developers stable enough for production use.[55…
+##  5 1.0     "2000-02-2… "Considered by its developers stable enough for production use.[57…
 ##  6 1.4     "2001-12-1… "S4 methods are introduced and the first version for Mac OS X is m…
 ##  7 1.8     "2003-10-0… "Introduced a flexible condition handling mechanism for signalling…
 ##  8 2.0     "2004-10-0… "Introduced lazy loading, which enables fast loading of data with …
 ##  9 2.1     "2005-04-1… "Support for UTF-8 encoding, and the beginnings of internationaliz…
-## 10 2.6.2   "2008-02-0… "Last version to support Windows 95, 98, Me and NT 4.0[56]"        
-## # … with 11 more rows
+## 10 2.6.2   "2008-02-0… "Last version to support Windows 95, 98, Me and NT 4.0[58]"        
+## # … with 12 more rows
 ```
 
 
@@ -1053,17 +1049,12 @@ data &lt;- jsonlite::read_json(file, ...)
 ```
 ]
 
----
-
-class: middle, center
-
-&lt;h1&gt;&lt;a href="https://www.dropbox.com/s/cfp1iibrl5nsmi3/TheRBootcamp.zip?dl=1" download&gt;Projekt&lt;/a&gt;&lt;/h1&gt;
 
 ---
 
 class: middle, center
 
-&lt;h1&gt;&lt;a href="https://therbootcamp.github.io/EDA_2021Mar/_sessions/Data/Data_practical.html"&gt;Practical&lt;/a&gt;&lt;/h1&gt;
+&lt;h1&gt;&lt;a href="https://therbootcamp.github.io/EDA_2021Sep/_sessions/Data/Data_practical.html"&gt;Practical&lt;/a&gt;&lt;/h1&gt;
 
 
     </textarea>

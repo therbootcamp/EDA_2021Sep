@@ -3,7 +3,7 @@ title: "Plotting"
 author: "Explorative Datenanalyse mit R<br>
   <a href='https://therbootcamp.github.io'>The R Bootcamp</a>
   <br>
-  <a href='https://therbootcamp.github.io/EDA_2021Mar/'>
+  <a href='https://therbootcamp.github.io/EDA_2021Sep/'>
     <i class='fas fa-clock' style='font-size:.9em;'></i>
   </a>&#8239; 
   <a href='https://therbootcamp.github.io'>
@@ -15,7 +15,7 @@ author: "Explorative Datenanalyse mit R<br>
   <a href='https://www.linkedin.com/company/basel-r-bootcamp/'>
     <i class='fab fa-linkedin' style='font-size: .9em;'></i>
   </a>"
-date: "März 2021"
+date: "September 2021"
 output:
   xaringan::moon_reader:
     css: ["default", "baselrbootcamp.css"]
@@ -43,7 +43,7 @@ layout: true
     </a>
     <a href="https://therbootcamp.github.io/">
       <font color="#7E7E7E">
-       Explorative Datenanalyse mit R | März 2021
+       Explorative Datenanalyse mit R | September 2021
       </font>
     </a>
     </span>
@@ -229,7 +229,7 @@ plot(x = baselers$groesse,
 </ul>
 
 <ol style="padding-left:72px">
-  <li><high><mono>ggplot2</mono> für Grafikeng</high>.</li>
+  <li><high><mono>ggplot2</mono> für Grafiken</high>.</li>
   <li><mono>dplyr</mono> für Datenverarbeitung.</li>
   <li><mono>tidyr</mono> für Datenverarbeitung.</li>
   <li><mono>readr</mono> für Daten I/O.</li>
@@ -249,10 +249,10 @@ plot(x = baselers$groesse,
     <img src="image/hex-ggplot2.png" height=160px></img>
     </td>
         <td bgcolor="white">
-    <img src="image/hex-dplyr.png"height=160px styity:.2le="opac"></img>
+    <img src="image/hex-dplyr.png"height=160px style="opacity:.2"></img>
     </td>
     <td bgcolor="white">
-    <img src="image/hex-tidyr.png"height=160px styity:.2le="opac"></img>
+    <img src="image/hex-tidyr.png"height=160px stylele="opacity:.2"></img>
     </td>
     <td bgcolor="white">
     <img src="image/hex-readr.png"height=160px style="opacity:.2"></img>
@@ -1133,7 +1133,7 @@ goal
 
 class: middle, center
 
-<h1><a href="https://therbootcamp.github.io/EDA_2021Mar/_sessions/Plotting/Plotting_practical.html">Practical</a></h1>
+<h1><a href="https://therbootcamp.github.io/EDA_2021Sep/_sessions/Plotting/Plotting_practical.html">Practical</a></h1>
 
 
 

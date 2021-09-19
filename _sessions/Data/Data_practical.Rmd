@@ -4,7 +4,7 @@ author: "<table style='table-layout:fixed;width:100%;border:0;padding:0;margin:0
   <tr style='border:none'>
     <td style='display:block;width:100%;text-align:left;vertical-align:bottom;padding:0;margin:0;border:none' nowrap>
       <font style='font-style:normal'>Explorative Datenanalyse mit R</font><br>
-      <a href='https://therbootcamp.github.io/EDA_2021Mar/'>
+      <a href='https://therbootcamp.github.io/EDA_2021Sep/'>
         <i class='fas fa-clock' style='font-size:.9em;' ></i>
       </a>
       <a href='https://therbootcamp.github.io'>
@@ -51,9 +51,9 @@ basel <- read_csv("1_Data/basel.csv")
 ```
 
 <p align="center" width="100%">
-  <img src="https://www.methodspace.com/wp-content/uploads/2018/02/Big-data-slider_GEBI.jpg" alt="Trulli" style="width:100%;height:280px">
+  <img src="image/data_love.png" alt="Trulli" style="width:100%;height:280px">
   <br>
-  <font style="font-size:10px">from <a href="https://www.methodspace.com">methodspace.com</a></font>
+  <font style="font-size:10px">from <a href="https://unsplash.com/photos/KgLtFCgfC28">unsplash.com</a></font>
 </p>
 
 # {.tabset .tabset-fade}

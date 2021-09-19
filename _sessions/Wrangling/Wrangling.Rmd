@@ -3,7 +3,7 @@ title: "Wrangling"
 author: "Explorative Datenanalyse mit R<br>
   <a href='https://therbootcamp.github.io'>The R Bootcamp</a>
   <br>
-  <a href='https://therbootcamp.github.io/EDA_2021Mar/'>
+  <a href='https://therbootcamp.github.io/EDA_2021Sep/'>
     <i class='fas fa-clock' style='font-size:.9em;'></i>
   </a>&#8239; 
   <a href='https://therbootcamp.github.io'>
@@ -15,7 +15,7 @@ author: "Explorative Datenanalyse mit R<br>
   <a href='https://www.linkedin.com/company/basel-r-bootcamp/'>
     <i class='fab fa-linkedin' style='font-size: .9em;'></i>
   </a>"
-date: "März 2021"
+date: "September 2021"
 output:
   xaringan::moon_reader:
     css: ["default", "baselrbootcamp.css"]
@@ -43,7 +43,7 @@ layout: true
     </a>
     <a href="https://therbootcamp.github.io/">
       <font color="#7E7E7E">
-       Explorative Datenanalyse mit R | März 2021
+       Explorative Datenanalyse mit R | September 2021
       </font>
     </a>
     </span>
@@ -783,5 +783,5 @@ patienten_ergebnisse %>%
 
 class: middle, center
 
-<h1><a href="https://therbootcamp.github.io/EDA_2021Mar/_sessions/Wrangling/Wrangling_practical.html">Practical</a></h1>
+<h1><a href="https://therbootcamp.github.io/EDA_2021Sep/_sessions/Wrangling/Wrangling_practical.html">Practical</a></h1>
 

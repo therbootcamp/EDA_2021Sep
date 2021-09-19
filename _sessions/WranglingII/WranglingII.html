@@ -13,8 +13,8 @@
 class: center, middle, inverse, title-slide
 
 # Wrangling II
-### Explorative Datenanalyse mit R<br> <a href='https://therbootcamp.github.io'>The R Bootcamp</a> <br> <a href='https://therbootcamp.github.io/EDA_2021Mar/'> <i class='fas fa-clock' style='font-size:.9em;'></i> </a>  <a href='https://therbootcamp.github.io'> <i class='fas fa-home' style='font-size:.9em;' ></i> </a>  <a href='mailto:therbootcamp@gmail.com'> <i class='fas fa-envelope' style='font-size: .9em;'></i> </a>  <a href='https://www.linkedin.com/company/basel-r-bootcamp/'> <i class='fab fa-linkedin' style='font-size: .9em;'></i> </a>
-### März 2021
+### Explorative Datenanalyse mit R<br> <a href='https://therbootcamp.github.io'>The R Bootcamp</a> <br> <a href='https://therbootcamp.github.io/EDA_2021Sep/'> <i class='fas fa-clock' style='font-size:.9em;'></i> </a>  <a href='https://therbootcamp.github.io'> <i class='fas fa-home' style='font-size:.9em;' ></i> </a>  <a href='mailto:therbootcamp@gmail.com'> <i class='fas fa-envelope' style='font-size: .9em;'></i> </a>  <a href='https://www.linkedin.com/company/basel-r-bootcamp/'> <i class='fab fa-linkedin' style='font-size: .9em;'></i> </a>
+### September 2021
 
 ---
 
@@ -35,7 +35,7 @@ layout: true
     &lt;/a&gt;
     &lt;a href="https://therbootcamp.github.io/"&gt;
       &lt;font color="#7E7E7E"&gt;
-       Explorative Datenanalyse mit R | März 2021
+       Explorative Datenanalyse mit R | September 2021
       &lt;/font&gt;
     &lt;/a&gt;
     &lt;/span&gt;
@@ -115,7 +115,7 @@ patienten_ergebnisse
 ```
 
 ```
-## # A tibble: 5 x 6
+## # A tibble: 5 × 6
 ##      id alter bedingung bed_label    t_1   t_2
 ##   &lt;dbl&gt; &lt;dbl&gt;     &lt;dbl&gt; &lt;chr&gt;      &lt;dbl&gt; &lt;dbl&gt;
 ## 1     1    37         1 placebo      123   135
@@ -165,7 +165,7 @@ patienten_ergebnisse %&gt;%
 ```
 
 ```
-## # A tibble: 5 x 6
+## # A tibble: 5 × 6
 ##   id    alter bedingung bed_label  t_1   t_2  
 ##   &lt;chr&gt; &lt;chr&gt; &lt;chr&gt;     &lt;chr&gt;      &lt;chr&gt; &lt;chr&gt;
 ## 1 1     37    1         placebo    123   135  
@@ -214,7 +214,7 @@ patienten_ergebnisse %&gt;%
 ```
 
 ```
-## # A tibble: 5 x 6
+## # A tibble: 5 × 6
 ##      id alter bedingung bed_label    t_1   t_2
 ##   &lt;dbl&gt; &lt;dbl&gt;     &lt;dbl&gt; &lt;chr&gt;      &lt;dbl&gt; &lt;dbl&gt;
 ## 1     1    37         1 placebo      123   135
@@ -263,7 +263,7 @@ patienten_ergebnisse %&gt;%
 ```
 
 ```
-## # A tibble: 3 x 6
+## # A tibble: 3 × 6
 ##      id alter bedingung bed_label    t_1   t_2
 ##   &lt;dbl&gt; &lt;dbl&gt;     &lt;dbl&gt; &lt;chr&gt;      &lt;dbl&gt; &lt;dbl&gt;
 ## 1     1    37         1 placebo      123   135
@@ -310,7 +310,7 @@ patienten_ergebnisse %&gt;%
 ```
 
 ```
-## # A tibble: 5 x 2
+## # A tibble: 5 × 2
 ##     t_1   t_2
 ##   &lt;dbl&gt; &lt;dbl&gt;
 ## 1   123   135
@@ -359,7 +359,7 @@ patienten_ergebnisse %&gt;%
 ```
 
 ```
-## # A tibble: 5 x 3
+## # A tibble: 5 × 3
 ##   bed_label    t_1   t_2
 ##   &lt;chr&gt;      &lt;dbl&gt; &lt;dbl&gt;
 ## 1 placebo      123   135
@@ -408,7 +408,7 @@ patienten_ergebnisse %&gt;%
 ```
 
 ```
-## # A tibble: 5 x 4
+## # A tibble: 5 × 4
 ##   alter bedingung bed_label    t_1
 ##   &lt;dbl&gt;     &lt;dbl&gt; &lt;chr&gt;      &lt;dbl&gt;
 ## 1    37         1 placebo      123
@@ -483,7 +483,7 @@ patienten_ergebnisse %&gt;%
 ```
 
 ```
-## # A tibble: 2 x 6
+## # A tibble: 2 × 6
 ##      id alter bedingung bed_label   t_1   t_2
 ##   &lt;dbl&gt; &lt;dbl&gt;     &lt;dbl&gt; &lt;chr&gt;     &lt;dbl&gt; &lt;dbl&gt;
 ## 1     1    37         1 placebo     123   135
@@ -521,7 +521,7 @@ patienten_ergebnisse %&gt;%
 ```
 
 ```
-## # A tibble: 4 x 6
+## # A tibble: 4 × 6
 ##      id alter bedingung bed_label zeit  messung
 ##   &lt;dbl&gt; &lt;dbl&gt;     &lt;dbl&gt; &lt;chr&gt;     &lt;chr&gt;   &lt;dbl&gt;
 ## 1     1    37         1 placebo   t_1       123
@@ -559,7 +559,7 @@ patienten_ergebnisse_lang
 ```
 
 ```
-## # A tibble: 4 x 6
+## # A tibble: 4 × 6
 ##      id alter bedingung bed_label zeit  messung
 ##   &lt;dbl&gt; &lt;dbl&gt;     &lt;dbl&gt; &lt;chr&gt;     &lt;chr&gt;   &lt;dbl&gt;
 ## 1     1    37         1 placebo   t_1       123
@@ -599,7 +599,7 @@ patienten_ergebnisse_lang %&gt;%
 ```
 
 ```
-## # A tibble: 2 x 6
+## # A tibble: 2 × 6
 ##      id alter bedingung bed_label   t_1   t_2
 ##   &lt;dbl&gt; &lt;dbl&gt;     &lt;dbl&gt; &lt;chr&gt;     &lt;dbl&gt; &lt;dbl&gt;
 ## 1     1    37         1 placebo     123   135
@@ -639,7 +639,7 @@ basel
 ```
 
 ```
-## # A tibble: 10,000 x 20
+## # A tibble: 10,000 × 20
 ##      id geschlecht alter groesse gewicht
 ##   &lt;dbl&gt; &lt;chr&gt;      &lt;dbl&gt;   &lt;dbl&gt;   &lt;dbl&gt;
 ## 1     1 f             87    165     NA  
@@ -696,7 +696,7 @@ basel %&gt;%
 ```
 
 ```
-## # A tibble: 1 x 2
+## # A tibble: 1 × 2
 ##   alter_mean groesse_median
 ##        &lt;dbl&gt;          &lt;dbl&gt;
 ## 1       49.4           171.
@@ -734,7 +734,7 @@ basel %&gt;%
 ```
 
 ```
-## # A tibble: 10,000 x 4
+## # A tibble: 10,000 × 4
 ##   alter groesse konfession     einkommen
 ##   &lt;dbl&gt;   &lt;dbl&gt; &lt;chr&gt;              &lt;dbl&gt;
 ## 1    87    165  katholisch            NA
@@ -780,7 +780,7 @@ basel %&gt;%
 ```
 
 ```
-## # A tibble: 1 x 3
+## # A tibble: 1 × 3
 ##   alter groesse einkommen
 ##   &lt;dbl&gt;   &lt;dbl&gt;     &lt;dbl&gt;
 ## 1  49.4    171.        NA
@@ -821,7 +821,7 @@ basel %&gt;%
 ```
 
 ```
-## # A tibble: 1 x 3
+## # A tibble: 1 × 3
 ##   alter groesse einkommen
 ##   &lt;dbl&gt;   &lt;dbl&gt;     &lt;dbl&gt;
 ## 1  49.4    171.     8355.
@@ -875,11 +875,7 @@ basel %&gt;%
 ```
 
 ```
-## `summarise()` ungrouping output (override with `.groups` argument)
-```
-
-```
-## # A tibble: 2 x 3
+## # A tibble: 2 × 3
 ##   geschlecht alter_mean groesse_median
 ##   &lt;chr&gt;           &lt;dbl&gt;          &lt;dbl&gt;
 ## 1 f                49.8           164 
@@ -926,11 +922,7 @@ basel %&gt;%
 ```
 
 ```
-## `summarise()` ungrouping output (override with `.groups` argument)
-```
-
-```
-## # A tibble: 2 x 2
+## # A tibble: 2 × 2
 ##   geschlecht     N
 ##   &lt;chr&gt;      &lt;int&gt;
 ## 1 f           5000
@@ -975,11 +967,7 @@ basel %&gt;%
 ```
 
 ```
-## `summarise()` ungrouping output (override with `.groups` argument)
-```
-
-```
-## # A tibble: 2 x 3
+## # A tibble: 2 × 3
 ##   geschlecht     N bild_1       
 ##   &lt;chr&gt;      &lt;int&gt; &lt;chr&gt;        
 ## 1 f           5000 obligatorisch
@@ -1025,11 +1013,7 @@ basel %&gt;%
 ```
 
 ```
-## `summarise()` ungrouping output (override with `.groups` argument)
-```
-
-```
-## # A tibble: 2 x 4
+## # A tibble: 2 × 4
 ##   geschlecht     N bild_1        bild_N
 ##   &lt;chr&gt;      &lt;int&gt; &lt;chr&gt;         &lt;chr&gt; 
 ## 1 f           5000 obligatorisch lehre 
@@ -1076,11 +1060,7 @@ basel %&gt;%
 ```
 
 ```
-## `summarise()` ungrouping output (override with `.groups` argument)
-```
-
-```
-## # A tibble: 2 x 5
+## # A tibble: 2 × 5
 ##   geschlecht     N bild_1       bild_N bild_150   
 ##   &lt;chr&gt;      &lt;int&gt; &lt;chr&gt;        &lt;chr&gt;  &lt;chr&gt;      
 ## 1 f           5000 obligatoris… lehre  obligatori…
@@ -1125,10 +1105,6 @@ basel %&gt;%
 ```
 
 ```
-## `summarise()` ungrouping output (override with `.groups` argument)
-```
-
-```
 ## [1] 5000 5000
 ```
 
@@ -1139,7 +1115,7 @@ basel %&gt;%
 
 class: middle, center
 
-&lt;h1&gt;&lt;a href="https://therbootcamp.github.io/EDA_2021Mar/_sessions/WranglingII/WranglingII_practical.html"&gt;Practical&lt;/a&gt;&lt;/h1&gt;
+&lt;h1&gt;&lt;a href="https://therbootcamp.github.io/EDA_2021Sep/_sessions/WranglingII/WranglingII_practical.html"&gt;Practical&lt;/a&gt;&lt;/h1&gt;
     </textarea>
 <style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
 <script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>

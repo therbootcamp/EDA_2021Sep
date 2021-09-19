@@ -3,7 +3,7 @@ title: "Nächste Schritte"
 author: "Explorative Datenanalyse mit R<br>
   <a href='https://therbootcamp.github.io'>The R Bootcamp</a>
   <br>
-  <a href='https://therbootcamp.github.io/EDA_2021Mar/'>
+  <a href='https://therbootcamp.github.io/EDA_2021Sep/'>
     <i class='fas fa-clock' style='font-size:.9em;'></i>
   </a>&#8239; 
   <a href='https://therbootcamp.github.io'>
@@ -15,7 +15,7 @@ author: "Explorative Datenanalyse mit R<br>
   <a href='https://www.linkedin.com/company/basel-r-bootcamp/'>
     <i class='fab fa-linkedin' style='font-size: .9em;'></i>
   </a>"
-date: "März 2021"
+date: "September 2021"
 output:
   xaringan::moon_reader:
     css: ["default", "baselrbootcamp.css"]
@@ -43,7 +43,7 @@ layout: true
     </a>
     <a href="https://therbootcamp.github.io/">
       <font color="#7E7E7E">
-       Explorative Datenanalyse mit R | März 2021
+       Explorative Datenanalyse mit R | September 2021
       </font>
     </a>
     </span>
@@ -223,44 +223,6 @@ Das Netz ist vll. der beste Ort für Informationen über R.
 
 ---
 
-# Support
-
-<table width=80% class="tg"  style="cellspacing:0; cellpadding:0; border:none">
-  <col width="50%">
-  <col width="50%">
-  <tr>
-    <th class="tg-yw4l" valign='top'>
-    <p align="center"><br>
-    <a href="www.dirkwulff.org"><img border="0" alt="W3Schools" src="https://therbootcamp.github.io/img/team/1.png" height="230" style="border-radius:50%"></a><br>
-    <p align="center">
-    <font size = 5>Dr. Dirk Wulff</font><br><br>
-    <a href="www.dirkwulff.org"><b>dirkwulff.org</b></a><br>
-    <a href="https://github.com/dwulff"><b>github.com/dwulff</b></a><br>
-    <font size=4><i>packages: </i></font> 
-    <a href="https://cran.r-project.org/web/packages/cstab/index.html"><b>cstab</b></a>, <br>
-    <a href="https://cran.r-project.org/web/packages/mousetrap/index.html"><b>mousetrap</b></a>, <a href="https://cran.r-project.org/web/packages/memnet/index.html"><b>memnet</b> <a href="https://github.com/dwulff/choicepp"><b>choicepp</b>
-    </p>  
-  </th>
-
-  <th class="tg-yw4l" valign='top'>
-    <p align="center">
-    <p align="center"><br>
-    <a href="https://www.schulte-mecklenbeck.com/"><img border="0" alt="W3Schools" src="https://therbootcamp.github.io/img/team/3.png" height="230" style="border-radius:50%"></a><br>
-    <p align="center">
-    <font size = 5>Dr. Michael Schulte-<br>Mecklenbeck</font><br><br>
-    <a href="www.schulte-mecklenbeck.com"><b>schulte-mecklenbeck.com</b></a><br>
-    <a href="https://github.com/schultem"><b>github.com/schultem</b></a><br><br>
-    </p>
-  </th>
-
-
-</tr>
-
-</table>
-
----
-
-
 # Weiterführende Kurse
 
 
@@ -277,7 +239,7 @@ Das Netz ist vll. der beste Ort für Informationen über R.
       <font style="font-size:20px;weight:700"><br>Einführung in die moderne Datenanalyse mit R</font><br>
       <br>
       <img src="https://therbootcamp.github.io/img/courses/0.png" height="180px" style="border-radius:50%;border:10px solid #E9ECEF"></img><br><br>
-      <high>März 31,<br>2020</high><br><br><br><br>
+      <high>Okt 15,<br>2020</high><br><br><br><br>
     </p>
   </td>
   <td>
@@ -286,7 +248,7 @@ Das Netz ist vll. der beste Ort für Informationen über R.
       <font style="font-size:20px;weight:700"><br>Explorative Datenanalyse mit R<br></font><br>
       <br>
       <img src="https://therbootcamp.github.io/img/courses/1.png" height="180px" style="border-radius:50%;border:10px solid #E9ECEF"></img><br><br>
-      <high>März 19/20,<br>2020</high><br><br><br><br>
+      <high>Sep 24/25,<br>2020</high><br><br><br><br>
     </p>
   </td>
   <td>
@@ -295,7 +257,7 @@ Das Netz ist vll. der beste Ort für Informationen über R.
       <font style="font-size:20px;weight:700"><br>Statistik mit R<br><br></font><br>
       <br>
       <img src="https://therbootcamp.github.io/img/courses/2.png" height="180px" style="border-radius:50%;border:10px solid #E9ECEF"></img><br><br>
-      <high>Statistik 16/17,<br>2020</high><br><br><br><br>
+      <high>Oct 22/23,<br>2020</high><br><br><br><br>
       </a>
     </p>
   </td>
@@ -305,7 +267,7 @@ Das Netz ist vll. der beste Ort für Informationen über R.
       <font style="font-size:20px;weight:700"><br>Maschinelles Lernen mit R<br></font><br>
       <br>
       <img src="https://therbootcamp.github.io/img/courses/3.png" height="180px" style="border-radius:50%;border:10px solid #E9ECEF"></img><br><br>
-      <high>Mai 14/15,<br>2020</high><br><br><br><br>
+      <high>Nov 19/20,<br>2020</high><br><br><br><br>
       </a>
     </p>
   </td>
@@ -315,7 +277,7 @@ Das Netz ist vll. der beste Ort für Informationen über R.
       <font style="font-size:20px;weight:700"><br>Reporting mit R<br><br></font><br>
       <br>
       <img src="https://therbootcamp.github.io/img/courses/4.png" height="180px" style="border-radius:50%;border:10px solid #E9ECEF"></img><br><br>
-      <high>Juni 25/26,<br>2020</high><br><br><br><br>
+      <high>tba,<br>2020</high><br><br><br><br>
       </a>
     </p>
   </td>
@@ -338,7 +300,7 @@ Das Netz ist vll. der beste Ort für Informationen über R.
 .pull-right45[
 
 <p align="center"><br><br>
-<iframe src="ttps://docs.google.com/forms/d/e/1FAIpQLSdwG4wcc-PzgPp1cKNVxZFLB9sHV88tSK-p6xIVBcBObBqaxA/viewform?embedded=true" width="430" height="550" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe></p>
+<iframe src="https://docs.google.com/forms/d/e/1FAIpQLScIgzEgxvAnY6c0OQrcQ7S4fGgyy4vFT0PFie9XGdbkI01aTg/viewform?embedded=true" width="430" height="550" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe></p>
 
 
 ]

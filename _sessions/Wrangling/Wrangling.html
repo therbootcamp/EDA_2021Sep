@@ -13,8 +13,8 @@
 class: center, middle, inverse, title-slide
 
 # Wrangling
-### Explorative Datenanalyse mit R<br> <a href='https://therbootcamp.github.io'>The R Bootcamp</a> <br> <a href='https://therbootcamp.github.io/EDA_2021Mar/'> <i class='fas fa-clock' style='font-size:.9em;'></i> </a>  <a href='https://therbootcamp.github.io'> <i class='fas fa-home' style='font-size:.9em;' ></i> </a>  <a href='mailto:therbootcamp@gmail.com'> <i class='fas fa-envelope' style='font-size: .9em;'></i> </a>  <a href='https://www.linkedin.com/company/basel-r-bootcamp/'> <i class='fab fa-linkedin' style='font-size: .9em;'></i> </a>
-### März 2021
+### Explorative Datenanalyse mit R<br> <a href='https://therbootcamp.github.io'>The R Bootcamp</a> <br> <a href='https://therbootcamp.github.io/EDA_2021Sep/'> <i class='fas fa-clock' style='font-size:.9em;'></i> </a>  <a href='https://therbootcamp.github.io'> <i class='fas fa-home' style='font-size:.9em;' ></i> </a>  <a href='mailto:therbootcamp@gmail.com'> <i class='fas fa-envelope' style='font-size: .9em;'></i> </a>  <a href='https://www.linkedin.com/company/basel-r-bootcamp/'> <i class='fab fa-linkedin' style='font-size: .9em;'></i> </a>
+### September 2021
 
 ---
 
@@ -35,7 +35,7 @@ layout: true
     &lt;/a&gt;
     &lt;a href="https://therbootcamp.github.io/"&gt;
       &lt;font color="#7E7E7E"&gt;
-       Explorative Datenanalyse mit R | März 2021
+       Explorative Datenanalyse mit R | September 2021
       &lt;/font&gt;
     &lt;/a&gt;
     &lt;/span&gt;
@@ -125,7 +125,7 @@ patienten
 ```
 
 ```
-## # A tibble: 5 x 3
+## # A tibble: 5 × 3
 ##      id    X1    X2
 ##   &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt;
 ## 1     1    37     1
@@ -144,7 +144,7 @@ ergebnisse
 ```
 
 ```
-## # A tibble: 5 x 3
+## # A tibble: 5 × 3
 ##      id   t_1   t_2
 ##   &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt;
 ## 1     4   100   105
@@ -327,7 +327,7 @@ patienten
 ```
 
 ```
-## # A tibble: 5 x 3
+## # A tibble: 5 × 3
 ##      id    X1    X2
 ##   &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt;
 ## 1     1    37     1
@@ -346,7 +346,7 @@ ergebnisse
 ```
 
 ```
-## # A tibble: 5 x 3
+## # A tibble: 5 × 3
 ##      id   t_1   t_2
 ##   &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt;
 ## 1     4   100   105
@@ -386,7 +386,7 @@ patienten %&gt;%
 ```
 
 ```
-## # A tibble: 5 x 3
+## # A tibble: 5 × 3
 ##      id alter bedingung
 ##   &lt;dbl&gt; &lt;dbl&gt;     &lt;dbl&gt;
 ## 1     1    37         1
@@ -431,7 +431,7 @@ patienten %&gt;%
 ```
 
 ```
-## # A tibble: 5 x 5
+## # A tibble: 5 × 5
 ##      id alter bedingung monate dekaden
 ##   &lt;dbl&gt; &lt;dbl&gt;     &lt;dbl&gt;  &lt;dbl&gt;   &lt;dbl&gt;
 ## 1     1    37         1    444     3.7
@@ -479,7 +479,7 @@ patienten %&gt;%
 ```
 
 ```
-## # A tibble: 5 x 4
+## # A tibble: 5 × 4
 ##      id alter bedingung bed_label 
 ##   &lt;dbl&gt; &lt;dbl&gt;     &lt;dbl&gt; &lt;chr&gt;     
 ## 1     1    37         1 placebo   
@@ -531,7 +531,7 @@ patienten %&gt;%
 ```
 
 ```
-## # A tibble: 3 x 6
+## # A tibble: 3 × 6
 ##      id alter bedingung bed_label    t_1   t_2
 ##   &lt;dbl&gt; &lt;dbl&gt;     &lt;dbl&gt; &lt;chr&gt;      &lt;dbl&gt; &lt;dbl&gt;
 ## 1     1    37         1 placebo      123   135
@@ -570,7 +570,7 @@ patienten %&gt;%
 ```
 
 ```
-## # A tibble: 5 x 6
+## # A tibble: 5 × 6
 ##      id alter bedingung bed_label    t_1   t_2
 ##   &lt;dbl&gt; &lt;dbl&gt;     &lt;dbl&gt; &lt;chr&gt;      &lt;dbl&gt; &lt;dbl&gt;
 ## 1     1    37         1 placebo      123   135
@@ -623,7 +623,7 @@ patienten_ergebnisse
 ```
 
 ```
-## # A tibble: 5 x 6
+## # A tibble: 5 × 6
 ##      id alter bedingung bed_label    t_1   t_2
 ##   &lt;dbl&gt; &lt;dbl&gt;     &lt;dbl&gt; &lt;chr&gt;      &lt;dbl&gt; &lt;dbl&gt;
 ## 1     1    37         1 placebo      123   135
@@ -665,7 +665,7 @@ patienten_ergebnisse %&gt;%
 ```
 
 ```
-## # A tibble: 5 x 6
+## # A tibble: 5 × 6
 ##      id alter bedingung bed_label    t_1   t_2
 ##   &lt;dbl&gt; &lt;dbl&gt;     &lt;dbl&gt; &lt;chr&gt;      &lt;dbl&gt; &lt;dbl&gt;
 ## 1     1    37         1 placebo      123   135
@@ -706,7 +706,7 @@ patienten_ergebnisse %&gt;%
 ```
 
 ```
-## # A tibble: 5 x 6
+## # A tibble: 5 × 6
 ##      id alter bedingung bed_label    t_1   t_2
 ##   &lt;dbl&gt; &lt;dbl&gt;     &lt;dbl&gt; &lt;chr&gt;      &lt;dbl&gt; &lt;dbl&gt;
 ## 1     4    34         1 placebo      100   105
@@ -752,7 +752,7 @@ patienten_ergebnisse %&gt;%
 ```
 
 ```
-## # A tibble: 2 x 6
+## # A tibble: 2 × 6
 ##      id alter bedingung bed_label    t_1   t_2
 ##   &lt;dbl&gt; &lt;dbl&gt;     &lt;dbl&gt; &lt;chr&gt;      &lt;dbl&gt; &lt;dbl&gt;
 ## 1     5    45         2 medikament    NA    NA
@@ -793,7 +793,7 @@ patienten_ergebnisse %&gt;%
 ```
 
 ```
-## # A tibble: 4 x 6
+## # A tibble: 4 × 6
 ##      id alter bedingung bed_label    t_1   t_2
 ##   &lt;dbl&gt; &lt;dbl&gt;     &lt;dbl&gt; &lt;chr&gt;      &lt;dbl&gt; &lt;dbl&gt;
 ## 1     4    34         1 placebo      100   105
@@ -832,7 +832,7 @@ patienten_ergebnisse %&gt;%
 ```
 
 ```
-## # A tibble: 4 x 6
+## # A tibble: 4 × 6
 ##      id alter bedingung bed_label    t_1   t_2
 ##   &lt;dbl&gt; &lt;dbl&gt;     &lt;dbl&gt; &lt;chr&gt;      &lt;dbl&gt; &lt;dbl&gt;
 ## 1     1    37         1 placebo      123   135
@@ -873,7 +873,7 @@ patienten_ergebnisse %&gt;%
 ```
 
 ```
-## # A tibble: 3 x 6
+## # A tibble: 3 × 6
 ##      id alter bedingung bed_label    t_1   t_2
 ##   &lt;dbl&gt; &lt;dbl&gt;     &lt;dbl&gt; &lt;chr&gt;      &lt;dbl&gt; &lt;dbl&gt;
 ## 1     2    65         2 medikament   143   140
@@ -914,7 +914,7 @@ patienten_ergebnisse %&gt;%
 ```
 
 ```
-## # A tibble: 5 x 2
+## # A tibble: 5 × 2
 ##      id bedingung
 ##   &lt;dbl&gt;     &lt;dbl&gt;
 ## 1     1         1
@@ -957,7 +957,7 @@ patienten_ergebnisse %&gt;%
 ```
 
 ```
-## # A tibble: 5 x 5
+## # A tibble: 5 × 5
 ##   alter bedingung bed_label    t_1   t_2
 ##   &lt;dbl&gt;     &lt;dbl&gt; &lt;chr&gt;      &lt;dbl&gt; &lt;dbl&gt;
 ## 1    37         1 placebo      123   135
@@ -973,7 +973,7 @@ patienten_ergebnisse %&gt;%
 
 class: middle, center
 
-&lt;h1&gt;&lt;a href="https://therbootcamp.github.io/EDA_2021Mar/_sessions/Wrangling/Wrangling_practical.html"&gt;Practical&lt;/a&gt;&lt;/h1&gt;
+&lt;h1&gt;&lt;a href="https://therbootcamp.github.io/EDA_2021Sep/_sessions/Wrangling/Wrangling_practical.html"&gt;Practical&lt;/a&gt;&lt;/h1&gt;
 
     </textarea>
 <style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>

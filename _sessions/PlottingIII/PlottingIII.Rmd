@@ -3,7 +3,7 @@ title: "Plotting III"
 author: "Explorative Datenanalyse mit R<br>
   <a href='https://therbootcamp.github.io'>The R Bootcamp</a>
   <br>
-  <a href='https://therbootcamp.github.io/EDA_2021Mar/'>
+  <a href='https://therbootcamp.github.io/EDA_2021Sep/'>
     <i class='fas fa-clock' style='font-size:.9em;'></i>
   </a>&#8239; 
   <a href='https://therbootcamp.github.io'>
@@ -15,7 +15,7 @@ author: "Explorative Datenanalyse mit R<br>
   <a href='https://www.linkedin.com/company/basel-r-bootcamp/'>
     <i class='fab fa-linkedin' style='font-size: .9em;'></i>
   </a>"
-date: "Mar 2021"
+date: "September 2021"
 output:
   xaringan::moon_reader:
     css: ["default", "baselrbootcamp.css"]
@@ -43,7 +43,7 @@ layout: true
     </a>
     <a href="https://therbootcamp.github.io/">
       <font color="#7E7E7E">
-       Explorative Datenanalyse mit R | März 2021
+       Explorative Datenanalyse mit R | September 2021
       </font>
     </a>
     </span>
@@ -457,36 +457,7 @@ library(gridExtra)
 
 ---
 
-class: middle, center
-
-<h1>Darstellungsarten</h1>
-<h2>Do's und Don'ts</h2>
-
----
-
-# DO: Text chart
-
-.pull-left3[
-
-<ul>
-  <li class="m1"><span>Geht es nur um eine Zahl, präsentiere sie als Text.</span></li>
-</ul>
-
-]
-
-
-.pull-right6[
-<p align="center">
-<img src="image/text1.png" height="400px"><br>
-<font style="font-size:10px">adapted from <a href="http://www.storytellingwithdata.com/">storytellingwithdata.com</a></font>
-</p>
-
-]
-
-
----
-
-# DO: Text chart
+# Text chart
 
 .pull-left3[
 
@@ -507,31 +478,7 @@ class: middle, center
 
 ---
 
-# DO: Tabellen
-
-.pull-left3[
-
-<ul>
-  <li class="m1"><span>Tabellen sind <high>präzise</high> und vollständig.</span></li>
-  <li class="m2"><span>Müssen <high>seriell gelesen</high> werden und brauchen of Zeit.</span></li>
-  <li class="m3"><span><high>Schlankere Tabellen</high> sind leichter zu lesen.</span></li>
-  <li class="m4"><span><high>Farben</high> können das Verständnis <high>unterstützen</high>.</span></li>
-</ul>
-
-]
-
-
-.pull-right6[
-<p align="center">
-<img src="image/table4.png" height="340px"><br>
-<font style="font-size:10px">adapted from <a href="http://www.storytellingwithdata.com/">storytellingwithdata.com</a></font>
-</p>
-
-]
-
----
-
-# DO: Tabellen
+# Tabellen
 
 .pull-left3[
 
@@ -554,7 +501,7 @@ class: middle, center
 
 ---
 
-# DO: Graphiken
+# Graphiken
 
 .pull-left3[
 
@@ -575,416 +522,9 @@ class: middle, center
 
 ]
 
-
-<!---
-
-# DO: Barplot
-
-.pull-left3[
-
-<ul>
-  <li class="m1"><span>Sehr <high>geläufig</high> und dadurch attraktiv.</span></li>
-  <li class="m2"><span>Grundlinie liegt auf <high>Null</high>.</span></li>
-  <li class="m3"><span>Natürliche <high>Reihenfolge</high> der Kategorien.</span></li>
-</ul>
-
-]
-
-
-.pull-right6[
-<p align="center">
-<img src="image/bar0.png" height="400px"><br>
-<font style="font-size:10px">adapted from <a href="http://www.storytellingwithdata.com/">storytellingwithdata.com</a></font>
-</p>
-
-]
-
-
-
-
-# DO: Barplot
-
-.pull-left3[
-
-<ul>
-  <li class="m1"><span>Sehr <high>geläufig</high> und dadurch attraktiv.</span></li>
-  <li class="m2"><span>Grundlinie liegt auf <high>Null</high>.</span></li>
-  <li class="m3"><span>Natürliche <high>Reihenfolge</high> der Kategorien.</span></li>
-</ul>
-
-]
-
-
-.pull-right6[
-<p align="center">
-<img src="image/bar1.png" height="400px"><br>
-<font style="font-size:10px">adapted from <a href="http://www.storytellingwithdata.com/">storytellingwithdata.com</a></font>
-</p>
-
-]
-
-
-
-
-# DO: Barplot
-
-.pull-left3[
-
-<ul>
-  <li class="m1"><span>Sehr <high>geläufig</high> und dadurch attraktiv.</span></li>
-  <li class="m2"><span>Grundlinie liegt auf <high>Null</high>.</span></li>
-  <li class="m3"><span>Natürliche <high>Reihenfolge</high> der Kategorien.</span></li>
-</ul>
-
-]
-
-
-.pull-right6[
-
-<p align="center">
-<img src="image/bar2.png" height="400px"><br>
-<font style="font-size:10px">adapted from <a href="http://www.storytellingwithdata.com/">storytellingwithdata.com</a></font>
-</p>
-
-]
-
-
-
-
-# DO: Horizontaler Barplot
-
-.pull-left3[
-
-<ul>
-  <li class="m1"><span>Horizontale Barplots sind etwas <high>leichter zu lesen</high>.</span></li>
-</ul>
-
-]
-
-
-.pull-right6[
-<p align="center">
-
-<img src="image/barhoriz1.png" height="400px"><br>
-<font style="font-size:10px">adapted from <a href="http://www.storytellingwithdata.com/">storytellingwithdata.com</a></font>
-</p>
-
-]
-
-
-
-# DO: Horizontaler Barplot
-
-.pull-left3[
-
-<ul>
-  <li class="m1"><span>Horizontale Barplots sind etwas <high>leichter zu lesen</high>.</span></li>
-</ul>
-
-]
-
-
-.pull-right6[
-<p align="center">
-
-<img src="image/barhoriz2.png" height="400px"><br>
-<font style="font-size:10px">adapted from <a href="http://www.storytellingwithdata.com/">storytellingwithdata.com</a></font>
-</p>
-
-]
-
-
-
-
-# DO: Linienplot
-
-.pull-left3[
-
-<ul>
-  <li class="m1"><span>Gut für den <high>Verlauf einzelner Variablen</high>.</span></li>
-  <li class="m2"><span>X-Achse muss <high>gleichschrittig</high> sein.</span></li>
-</ul>
-
-]
-
-
-.pull-right6[
-<p align="center">
-<img src="image/line1.png" height="380px"><br>
-<font style="font-size:10px">adapted from <a href="http://www.storytellingwithdata.com/">storytellingwithdata.com</a></font>
-</p>
-
-]
-
-
-
-# DO: Linienplot
-
-.pull-left3[
-
-<ul>
-  <li class="m1"><span>Gut für den <high>Verlauf einzelner Variablen</high>.</span></li>
-  <li class="m2"><span>X-Achse muss <high>gleichschrittig</high> sein.</span></li>
-</ul>
-
-]
-
-
-.pull-right6[
-<p align="center">
-<img src="image/line2.png" height="380px"><br>
-<font style="font-size:10px">adapted from <a href="http://www.storytellingwithdata.com/">storytellingwithdata.com</a></font>
-</p>
-
-]
-
-
-
-# DO: Slopeplot
-
-.pull-left3[
-
-<ul>
-  <li class="m1"><span>Gut für <high>Veränderungen</high> über zwei Beobachtungen.</span></li>
-  <li class="m2"><span>Überlappungen können <high>leicht komplex</high> werden.</span></li>
-</ul>
-
-]
-
-
-.pull-right6[
-<p align="center">
-<img src="image/slope1.png" height="420px"><br>
-<font style="font-size:10px">adapted from <a href="http://www.storytellingwithdata.com/">storytellingwithdata.com</a></font>
-</p>
-
-]
-
-
-
-# DO: Slopeplot
-
-.pull-left3[
-
-<ul>
-  <li class="m1"><span>Gut für <high>Veränderungen</high> über zwei Beobachtungen.</span></li>
-  <li class="m2"><span>Überlappungen können <high>leicht komplex</high> werden.</span></li>
-</ul>
-
-]
-
-
-.pull-right6[
-<p align="center">
-<img src="image/slope2.png" height="420px"><br>
-<font style="font-size:10px">adapted from <a href="http://www.storytellingwithdata.com/">storytellingwithdata.com</a></font>
-</p>
-
-]
-
-
-
-# DO: Scatterplot
-
-.pull-left3[
-
-<ul>
-  <li class="m1"><span>Gut für <high>Zusammenhänge</high>.</span></li>
-</ul>
-
-]
-
-
-.pull-right6[
-<p align="center">
-<img src="image/scatter1.png" height="400px"><br>
-<font style="font-size:10px">adapted from <a href="http://www.storytellingwithdata.com/">storytellingwithdata.com</a></font>
-</p>
-
-]
-
-
-
-
-
-# DO: Scatterplot
-
-.pull-left3[
-
-<ul>
-  <li class="m1"><span>Gut für <high>Zusammenhänge</high>.</span></li>
-</ul>
-
-]
-
-
-.pull-right6[
-<p align="center">
-<img src="image/scatter2.png" height="400px"><br>
-<font style="font-size:10px">adapted from <a href="http://www.storytellingwithdata.com/">storytellingwithdata.com</a></font>
-</p>
-
-]
-
-
---->
-
 ---
 
-# DON'T: Pie charts
-
-.pull-left3[
-
-<ul>
-  <li class="m1"><span><high>Schwer</high> zu verstehen.</span></li>
-  <li class="m2"><span><high>Niemals 3D</high>.</span></li>
-</ul>
-
-]
-
-
-.pull-right6[
-<p align="center">
-
-<img src="image/pie1.png" height="400px"><br>
-<font style="font-size:10px">adapted from <a href="http://www.storytellingwithdata.com/">storytellingwithdata.com</a></font>
-</p>
-
-]
-
----
-
-# DON'T: Pie charts
-
-.pull-left3[
-
-<ul>
-  <li class="m1"><span><high>Schwer</high> zu verstehen.</span></li>
-  <li class="m2"><span><high>Niemals 3D</high>.</span></li>
-</ul>
-
-
-]
-
-
-.pull-right6[
-<p align="center">
-
-<img src="image/pie2.png" height="400px"><br>
-<font style="font-size:10px">adapted from <a href="http://www.storytellingwithdata.com/">storytellingwithdata.com</a></font>
-</p>
-
-]
-
----
-
-# DON'T: Area graph
-
-.pull-left3[
-
-<ul>
-  <li class="m1"><span><high>Besser</high> als pie charts.</span></li>
-  <li class="m2"><span>Flächen immer schwer zu verstehen.</span></li>
-</ul>
-
-
-]
-
-
-.pull-right6[
-<p align="center">
-
-<img src="image/area.png" height="400px"><br>
-<font style="font-size:10px">adapted from <a href="http://www.storytellingwithdata.com/">storytellingwithdata.com</a></font>
-</p>
-
-]
-
----
-
-# DON'T: 2. Achse
-
-.pull-left3[
-
-<ul>
-  <li class="m1"><span><high>Unnötig komplex</high></span></li>
-  <li class="m2"><span>Besser:</span></li>
-  <ul class="level">
-    <li><span>Explizierte Werte</span></li>
-    <li><span>Vertikal getrennte Achse</span></li>
-  </ul>
-</ul>
-
-
-]
-
-
-.pull-right6[
-<p align="center">
-
-<img src="image/secondaxis.png" height="400px"><br>
-<font style="font-size:10px">adapted from <a href="http://www.storytellingwithdata.com/">storytellingwithdata.com</a></font>
-</p>
-
-]
-
----
-
-# DON'T: 2. Achse
-
-.pull-left3[
-
-<ul>
-  <li class="m1"><span><high>Unnötig komplex</high></span></li>
-  <li class="m2"><span>Besser:</span></li>
-  <ul class="level">
-    <li><span>Explizierte Werte</span></li>
-    <li><span>Vertikal getrennte Achse</span></li>
-  </ul>
-</ul>
-
-]
-
-
-.pull-right6[
-<p align="center">
-
-<img src="image/secondaxis2.png" height="400px"><br>
-<font style="font-size:10px">adapted from <a href="http://www.storytellingwithdata.com/">storytellingwithdata.com</a></font>
-</p>
-
-]
-
----
-
-# DON'T: 2. Achse
-
-.pull-left3[
-
-<ul>
-  <li class="m1"><span><high>Unnötig komplex</high></span></li>
-  <li class="m2"><span>Besser:</span></li>
-  <ul class="level">
-    <li><span>Explizierte Werte</span></li>
-    <li><span>Vertikal getrennte Achse</span></li>
-  </ul>
-</ul>
-
-]
-
-
-.pull-right6[
-<p align="center">
-
-<img src="image/secondaxis3.png" height="400px"><br>
-<font style="font-size:10px">adapted from <a href="http://www.storytellingwithdata.com/">storytellingwithdata.com</a></font>
-</p>
-
-]
-
----
-
-# DO: Annotation
+# Annotation
 
 .pull-left3[
 
@@ -1028,4 +568,4 @@ class: middle, center
 
 class: middle, center
 
-<h1><a href="https://therbootcamp.github.io/EDA_2021Mar/_sessions/PlottingIII/PlottingIII_practical.html">Practical</a></h1>
+<h1><a href="https://therbootcamp.github.io/EDA_2021Sep/_sessions/PlottingIII/PlottingIII_practical.html">Practical</a></h1>
