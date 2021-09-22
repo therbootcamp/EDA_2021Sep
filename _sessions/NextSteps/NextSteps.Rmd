@@ -239,7 +239,7 @@ Das Netz ist vll. der beste Ort für Informationen über R.
       <font style="font-size:20px;weight:700"><br>Einführung in die moderne Datenanalyse mit R</font><br>
       <br>
       <img src="https://therbootcamp.github.io/img/courses/0.png" height="180px" style="border-radius:50%;border:10px solid #E9ECEF"></img><br><br>
-      <high>Okt 15,<br>2020</high><br><br><br><br>
+      <high>Okt 15,<br>2021</high><br><br><br><br>
     </p>
   </td>
   <td>
@@ -248,7 +248,7 @@ Das Netz ist vll. der beste Ort für Informationen über R.
       <font style="font-size:20px;weight:700"><br>Explorative Datenanalyse mit R<br></font><br>
       <br>
       <img src="https://therbootcamp.github.io/img/courses/1.png" height="180px" style="border-radius:50%;border:10px solid #E9ECEF"></img><br><br>
-      <high>Sep 24/25,<br>2020</high><br><br><br><br>
+      <high>Sep 24/25,<br>2021</high><br><br><br><br>
     </p>
   </td>
   <td>
@@ -257,7 +257,7 @@ Das Netz ist vll. der beste Ort für Informationen über R.
       <font style="font-size:20px;weight:700"><br>Statistik mit R<br><br></font><br>
       <br>
       <img src="https://therbootcamp.github.io/img/courses/2.png" height="180px" style="border-radius:50%;border:10px solid #E9ECEF"></img><br><br>
-      <high>Oct 22/23,<br>2020</high><br><br><br><br>
+      <high>Oct 22/23,<br>2021</high><br><br><br><br>
       </a>
     </p>
   </td>
@@ -267,7 +267,7 @@ Das Netz ist vll. der beste Ort für Informationen über R.
       <font style="font-size:20px;weight:700"><br>Maschinelles Lernen mit R<br></font><br>
       <br>
       <img src="https://therbootcamp.github.io/img/courses/3.png" height="180px" style="border-radius:50%;border:10px solid #E9ECEF"></img><br><br>
-      <high>Nov 19/20,<br>2020</high><br><br><br><br>
+      <high>Nov 19/20,<br>2021</high><br><br><br><br>
       </a>
     </p>
   </td>
@@ -277,7 +277,7 @@ Das Netz ist vll. der beste Ort für Informationen über R.
       <font style="font-size:20px;weight:700"><br>Reporting mit R<br><br></font><br>
       <br>
       <img src="https://therbootcamp.github.io/img/courses/4.png" height="180px" style="border-radius:50%;border:10px solid #E9ECEF"></img><br><br>
-      <high>tba,<br>2020</high><br><br><br><br>
+      <high>tba,<br>2021</high><br><br><br><br>
       </a>
     </p>
   </td>
