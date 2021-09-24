@@ -262,9 +262,9 @@ Chief Decision Scientist at Google
 .pull-right5[
 <br>
 
-  <iframe src="https://therbootcamp.github.io/EDA_2020Feb/_sessions/Data/Data_practical.html" height="480px" width = "500px"></iframe>
+  <iframe src="https://therbootcamp.github.io/EDA_2021Sep/_sessions/Data/Data_practical.html" height="480px" width = "500px"></iframe>
 
-  Beispiel:<a href="https://therbootcamp.github.io/EDA_2020Feb/_sessions/Data/Data_practical.html"> Daten </a>
+  Beispiel:<a href="https://therbootcamp.github.io/EDA_2021Sep/_sessions/Data/Data_practical.html"> Daten </a>
 
 ]
 
