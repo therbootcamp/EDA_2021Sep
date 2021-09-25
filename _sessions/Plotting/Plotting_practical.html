@@ -215,7 +215,11 @@ pre code {
 <div id="b---lade-den-datensatz" class="section level3">
 <h3>B - Lade den Datensatz</h3>
 <ol style="list-style-type: decimal">
-<li><p>Verwende die <code>read_csv()</code> Funktion um den Datensatz <code>mcdonalds</code> als Objekt <code>mcdonalds</code> einzulesen. Denke an den Trick mit den Anführungszeichen.</p></li>
+<li>Verwende die <code>read_csv()</code> Funktion um den Datensatz <code>mcdonalds</code> als Objekt <code>mcdonalds</code> einzulesen. Denke an den Trick mit den Anführungszeichen.</li>
+</ol>
+<pre class="r"><code># Lese mcdonalds
+mcdonalds &lt;- read_csv(&#39;1_Data/mcdonalds.csv&#39;)</code></pre>
+<ol start="2" style="list-style-type: decimal">
 <li><p>Printe den Datensatz. Wurden alle Variablentypen korrekt identifiziert?</p></li>
 <li><p>Verwende <code>summary()</code> um einen weiteren Überblick über die Daten zu bekommen.</p></li>
 </ol>
@@ -228,29 +232,49 @@ pre code {
 <li>Verwende <code>ggplot()</code> um einen leeren Plot für den <code>mcdonalds</code> Datensatz zu starten.</li>
 </ol>
 <pre class="r"><code>ggplot(data = mcdonalds)</code></pre>
+<pre class="r"><code>ggplot(mcdonalds)</code></pre>
+<p><img src="Plotting_practical_files/figure-html/unnamed-chunk-5-1.png" width="672" style="display: block; margin: auto;" /></p>
 <ol start="2" style="list-style-type: decimal">
 <li>Verwende nun das <code>mapping</code>-Argument und die <code>aes()</code>-Helferfunltion um <code>Calories</code> der x-Achse und <code>SaturatedFat</code> der y-Achse zuzuweisen.</li>
 </ol>
 <pre class="r"><code>ggplot(data = mcdonalds, 
        mapping = aes(x = XX, y = XX))</code></pre>
+<pre class="r"><code>ggplot(mcdonalds, aes(x = Calories, y = SaturatedFat))</code></pre>
+<p><img src="Plotting_practical_files/figure-html/unnamed-chunk-7-1.png" width="672" style="display: block; margin: auto;" /></p>
 <ol start="3" style="list-style-type: decimal">
-<li><p>Ergänze <code>geom_point()</code> mit <code>+</code> um Punkte zu plotten.</p></li>
-<li><p>Verwende das <code>col</code> Argument in <code>aes()</code> um die Farbe nach der Variable <code>Category</code> variieren zu lassen.</p></li>
+<li>Ergänze <code>geom_point()</code> mit <code>+</code> um Punkte zu plotten.</li>
+</ol>
+<pre class="r"><code>ggplot(mcdonalds, aes(x = Calories, y = SaturatedFat)) +
+  geom_point()</code></pre>
+<p><img src="Plotting_practical_files/figure-html/unnamed-chunk-8-1.png" width="672" style="display: block; margin: auto;" /></p>
+<ol start="4" style="list-style-type: decimal">
+<li>Verwende das <code>col</code> Argument in <code>aes()</code> um die Farbe nach der Variable <code>Category</code> variieren zu lassen.</li>
 </ol>
 <pre class="r"><code>ggplot(mcdonalds, aes(x = XX, y = XX, col = XX)) +
   geom_point() </code></pre>
+<pre class="r"><code>ggplot(mcdonalds, aes(x = Calories, y = SaturatedFat, col = Category)) +
+  geom_point()</code></pre>
+<p><img src="Plotting_practical_files/figure-html/unnamed-chunk-10-1.png" width="672" style="display: block; margin: auto;" /></p>
 <ol start="5" style="list-style-type: decimal">
 <li>Ergänze <code>+ geom_smooth()</code> um eine gefittete Linie zu ergänzen.</li>
 </ol>
 <pre class="r"><code>ggplot(mcdonalds, aes(x = XX, y = XX, col = XX)) +
   geom_point() + 
   geom_smooth()</code></pre>
+<pre class="r"><code>ggplot(mcdonalds, aes(x = Calories, y = SaturatedFat, col = Category)) +
+  geom_point() +
+  geom_smooth()</code></pre>
+<p><img src="Plotting_practical_files/figure-html/unnamed-chunk-12-1.png" width="672" style="display: block; margin: auto;" /></p>
 <ol start="6" style="list-style-type: decimal">
 <li>Oops! Hast du mehre Linien anstatt einer bekommen? Löse das Problem indem du die Farbe innerhalb von <code>geom_smooth()</code> auf <code>"black"</code> setzt.</li>
 </ol>
 <pre class="r"><code>ggplot(mcdonalds, aes(x = XX, y = XX, col = XX)) +
   geom_point() +
   geom_smooth(col = &quot;XX&quot;) </code></pre>
+<pre class="r"><code>ggplot(mcdonalds, aes(x = Calories, y = SaturatedFat, col = Category)) +
+  geom_point() +
+  geom_smooth(col = &quot;black&quot;)</code></pre>
+<p><img src="Plotting_practical_files/figure-html/unnamed-chunk-14-1.png" width="672" style="display: block; margin: auto;" /></p>
 <ol start="7" style="list-style-type: decimal">
 <li><p>R versteht eine grosse Menge von Farbworten. Lasse dir diese mit <code>colors()</code> (ohne Argumente) anzeigen. Alle aufgeführten <code>character</code> Werte können verwenden werden um die entsprechende Farbe zu definieren.</p></li>
 <li><p>Verwende nun <code>labs()</code> um den Plot angemessen zu annotieren.</p></li>
@@ -261,6 +285,13 @@ pre code {
   labs(title = &quot;XX&quot;,
        subtitle = &quot;XX&quot;,
        caption = &quot;XX&quot;)</code></pre>
+<pre class="r"><code>ggplot(mcdonalds, aes(x = Calories, y = SaturatedFat, col = Category)) +
+  geom_point() +
+  geom_smooth(col = &quot;black&quot;) +
+  labs(title = &quot;McDonalds Nährwerte&quot;,
+       subtitle = &quot;Jeder Punkt ist ein Menü-Item&quot;,
+       caption = &quot;Quelle: Kaggle.com&quot;)</code></pre>
+<p><img src="Plotting_practical_files/figure-html/unnamed-chunk-16-1.png" width="672" style="display: block; margin: auto;" /></p>
 <ol start="9" style="list-style-type: decimal">
 <li>Verwende <code>xlim()</code>, eine einfache Version von <code>scale_x_continuous()</code> (mehr dazu später), um die x-Achse auf die Werte <code>0</code> und <code>1250</code> zu begrenzen.</li>
 </ol>
@@ -271,9 +302,26 @@ pre code {
        subtitle = &quot;XX&quot;,
        caption = &quot;XX&quot;) +
   xlim(XX, XX)</code></pre>
+<pre class="r"><code>ggplot(mcdonalds, aes(x = Calories, y = SaturatedFat, col = Category)) +
+  geom_point() +
+  geom_smooth(col = &quot;black&quot;) +
+  labs(title = &quot;McDonalds Nährwerte&quot;,
+       subtitle = &quot;Jeder Punkt ist ein Menü-Item&quot;,
+       caption = &quot;Quelle: Kaggle.com&quot;) +
+  xlim(0, 1250)</code></pre>
+<p><img src="Plotting_practical_files/figure-html/unnamed-chunk-18-1.png" width="672" style="display: block; margin: auto;" /></p>
 <ol start="10" style="list-style-type: decimal">
 <li>Abschliessend verwende <code>theme_minimal()</code> um die Ästhetik des Plots anzupassen. Auch hierzu mehr später.</li>
 </ol>
+<pre class="r"><code>ggplot(mcdonalds, aes(x = Calories, y = SaturatedFat, col = Category)) +
+  geom_point() +
+  geom_smooth(col = &quot;black&quot;) +
+  labs(title = &quot;McDonalds Nährwerte&quot;,
+       subtitle = &quot;Jeder Punkt ist ein Menü-Item&quot;,
+       caption = &quot;Quelle: Kaggle.com&quot;) +
+  xlim(0, 1250) +
+  theme_minimal()</code></pre>
+<p><img src="Plotting_practical_files/figure-html/unnamed-chunk-19-1.png" width="672" style="display: block; margin: auto;" /></p>
 </div>
 <div id="d---geoms" class="section level3">
 <h3>D - <code>geom</code>s</h3>
@@ -283,6 +331,10 @@ pre code {
 <pre class="r"><code>ggplot(data = mcdonalds, 
        aes(x = XX, y = XX, fill = XX)) +
   geom_violin()</code></pre>
+<pre class="r"><code>ggplot(data = mcdonalds, 
+       aes(x = Category, y = Calories, fill = Category)) +
+  geom_violin()</code></pre>
+<p><img src="Plotting_practical_files/figure-html/unnamed-chunk-21-1.png" width="768" style="display: block; margin: auto;" /></p>
 <ol start="2" style="list-style-type: decimal">
 <li>Ergänze mit <code>labs()</code> einen angemessenen Titel (<code>title</code>) und Untertitel (<code>subtitle</code>).</li>
 </ol>
@@ -290,6 +342,11 @@ pre code {
   geom_violin() +
   labs(title = &quot;XX&quot;,
        subtitle = &quot;XX&quot;)</code></pre>
+<pre class="r"><code>ggplot(data = mcdonalds, aes(x = Category, y = Calories, fill = Category)) +
+  geom_violin() +
+  labs(title = &quot;McDonalds&quot;,
+       subtitle = &quot;Kalorienverteilung pro Menü Kategorie&quot;)</code></pre>
+<p><img src="Plotting_practical_files/figure-html/unnamed-chunk-23-1.png" width="768" style="display: block; margin: auto;" /></p>
 <ol start="3" style="list-style-type: decimal">
 <li>Ergänze <code>guides(fill = FALSE)</code>, so dass keine Legende gezeigt wird.</li>
 </ol>
@@ -298,9 +355,25 @@ pre code {
   labs(title = &quot;XX&quot;,
        subtitle = &quot;XX&quot;) + 
   guides(fill = FALSE)</code></pre>
+<pre class="r"><code>ggplot(data = mcdonalds, aes(x = Category, y = Calories, fill = Category)) +
+  geom_violin() +
+  labs(title = &quot;McDonalds&quot;,
+       subtitle = &quot;Kalorienverteilung pro Menü Kategorie&quot;) +
+  guides(fill = FALSE)</code></pre>
+<p><img src="Plotting_practical_files/figure-html/unnamed-chunk-25-1.png" width="768" style="display: block; margin: auto;" /></p>
 <ol start="4" style="list-style-type: decimal">
-<li><p>Verwende <code>geom_jitter()</code> um Punkte über die Violinen zu plotten. Setze in der Funktion <code>width = 1</code> und <code>alpha = .5</code>.</p></li>
-<li><p>Probiere ein paar Sachen aus:</p></li>
+<li>Verwende <code>geom_jitter()</code> um Punkte über die Violinen zu plotten. Setze in der Funktion <code>width = 1</code> und <code>alpha = .5</code>.</li>
+</ol>
+<pre class="r"><code>ggplot(data = mcdonalds, 
+       aes(x = Category, y = Calories, fill = Category)) +
+  geom_violin() +
+  labs(title = &quot;McDonalds&quot;,
+       subtitle = &quot;Kalorienverteilung pro Menü Kategorie&quot;) +
+  guides(fill = FALSE) +
+  geom_jitter(width = .1, alpha = .5)</code></pre>
+<p><img src="Plotting_practical_files/figure-html/unnamed-chunk-26-1.png" width="768" style="display: block; margin: auto;" /></p>
+<ol start="5" style="list-style-type: decimal">
+<li>Probiere ein paar Sachen aus:</li>
 </ol>
 <ul>
 <li>Ändere die Werte für <code>width</code> oder <code>alpha</code> in <code>geom_jitter()</code>.</li>
@@ -328,7 +401,23 @@ pre code {
 <li><p>Wo sind die Labels? Ah, du hast <code>ggplot</code> nicht gesagt welche Spalte die Information beinhaltet, die in den Labels stehen soll. Behebe dieses Problem indem du innerhalb der <code>aes()</code> Funktion dem Argument <code>label</code> die Spalte <code>Item</code> zuweist. Führe den Code nochmal aus. Jetzt solltest du viele labels sehen!</p></li>
 <li><p>Passe <code>geom_text()</code> an in dem du <code>col</code> auf <code>black</code>, <code>check_overlap</code> auf <code>TRUE</code>, und <code>hjust</code> auf <code>"left"</code> setzt.</p></li>
 <li><p>Verwende nun das <code>data</code> Argument in <code>geom_text()</code> und weise ihm einen gefilterten Auschnitt des <code>mcdonalds</code> Datensatzes zu, nämlich <code>data = mcdonalds %&gt;% filter(Calories &gt; 1100)</code>. Schau was passiert.</p></li>
-<li><p>Probiere ein paar Sachen aus:</p></li>
+</ol>
+<pre class="r"><code>ggplot(mcdonalds, aes(x = Sugars, 
+                      y = Calories, 
+                      col = Category, 
+                      label = Item)) +
+  geom_point() +
+  geom_text(data = mcdonalds %&gt;% 
+            filter(Calories &gt; 1100),
+            col = &quot;black&quot;, 
+            check_overlap = TRUE, 
+            hjust = &quot;left&quot;) +
+  xlim(0, 150) +
+  ylim(0, 2000) +
+  theme_minimal() +
+  labs(title = &quot;Ergänze Labels zu einem Plot mit geom_text()&quot;)</code></pre>
+<ol start="6" style="list-style-type: decimal">
+<li>Probiere ein paar Sachen aus:</li>
 </ol>
 <ul>
 <li><p>Verwende das <code>size</code> Argument in <code>aes()</code>, so dass die Grösse der Punkte den <code>Calories</code> entspricht.</p></li>
@@ -345,6 +434,11 @@ pre code {
                fun.y = &quot;mean&quot;) +
   labs(title = &quot;XX&quot;,
        subtitle = &quot;XX&quot;)</code></pre>
+<pre class="r"><code>ggplot(mcdonalds, aes(x = Category, y = Calories)) +
+  stat_summary(geom = &quot;bar&quot;, 
+               fun.y = &quot;mean&quot;) +
+  labs(title = &quot;Calories gegen McDonalds Menu Kategorie&quot;,
+       subtitle = &quot;Balken repräsentieren Mittelwwerte&quot;)</code></pre>
 <p><img src="Plotting_practical_files/figure-html/unnamed-chunk-31-1.png" width="960" style="display: block; margin: auto;" /></p>
 <ol start="2" style="list-style-type: decimal">
 <li>Probiere ein paar Sachen aus:</li>
@@ -354,6 +448,15 @@ pre code {
 <li>Gib jedem Balken eine andere Farbe.</li>
 <li>Ergänze Punkte über den Balken mit <code>geom_point()</code>, <code>geom_count()</code>, oder <code>geom_jitter()</code>.</li>
 </ul>
+<pre class="r"><code>ggplot(mcdonalds, aes(x = Category, 
+                      y = Calories, 
+                      col = Category)) +
+  stat_summary(geom = &quot;bar&quot;, 
+               fun.y = &quot;median&quot;) +
+  geom_jitter() +
+  labs(title = &quot;Calories gegen McDonalds Menu Kategorie&quot;,
+       subtitle = &quot;Balken repräsentieren Mittelwwerte&quot;)</code></pre>
+<p><img src="Plotting_practical_files/figure-html/unnamed-chunk-32-1.png" width="960" style="display: block; margin: auto;" /></p>
 </div>
 <div id="x---challenges" class="section level3">
 <h3>X - Challenges</h3>
@@ -433,6 +536,9 @@ ggplot(data = mpg,
 </div>
 <div id="datensätze" class="section level2">
 <h2>Datensätze</h2>
+<pre class="r"><code>library(tidyverse)
+library(ggthemes)
+mcdonalds &lt;- read_csv(&quot;1_Data/mcdonalds.csv&quot;)</code></pre>
 <table>
 <thead>
 <tr class="header">
