@@ -342,7 +342,7 @@ ggplot(mcdonalds, aes(x = XX,
 
 3. Wo sind die Labels? Ah, du hast `ggplot` nicht gesagt welche Spalte die Information beinhaltet, die in den Labels stehen soll. Behebe dieses Problem indem du innerhalb der `aes()` Funktion dem Argument `label` die Spalte `Item` zuweist. Führe den Code nochmal aus. Jetzt solltest du viele labels sehen!
 
-4. Passe `geom_text()` an in dem du `col` auf `black`, `check_overlap` auf `TRUE`, und `hjust` auf `left` setzt.
+4. Passe `geom_text()` an in dem du `col` auf `black`, `check_overlap` auf `TRUE`, und `hjust` auf `"left"` setzt.
 
 5. Verwende nun das `data` Argument in `geom_text()` und weise ihm einen gefilterten Auschnitt des `mcdonalds` Datensatzes zu, nämlich `data = mcdonalds %>% filter(Calories > 1100)`. Schau was passiert.
 

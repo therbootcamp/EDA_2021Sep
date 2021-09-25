@@ -326,7 +326,7 @@ pre code {
 <ol start="2" style="list-style-type: decimal">
 <li><p>Nun ergänze <code>geom_text()</code> so dass für jeden Punkt das entsprechende <code>Item</code> Label angezeigt wird.</p></li>
 <li><p>Wo sind die Labels? Ah, du hast <code>ggplot</code> nicht gesagt welche Spalte die Information beinhaltet, die in den Labels stehen soll. Behebe dieses Problem indem du innerhalb der <code>aes()</code> Funktion dem Argument <code>label</code> die Spalte <code>Item</code> zuweist. Führe den Code nochmal aus. Jetzt solltest du viele labels sehen!</p></li>
-<li><p>Passe <code>geom_text()</code> an in dem du <code>col</code> auf <code>black</code>, <code>check_overlap</code> auf <code>TRUE</code>, und <code>hjust</code> auf <code>left</code> setzt.</p></li>
+<li><p>Passe <code>geom_text()</code> an in dem du <code>col</code> auf <code>black</code>, <code>check_overlap</code> auf <code>TRUE</code>, und <code>hjust</code> auf <code>"left"</code> setzt.</p></li>
 <li><p>Verwende nun das <code>data</code> Argument in <code>geom_text()</code> und weise ihm einen gefilterten Auschnitt des <code>mcdonalds</code> Datensatzes zu, nämlich <code>data = mcdonalds %&gt;% filter(Calories &gt; 1100)</code>. Schau was passiert.</p></li>
 <li><p>Probiere ein paar Sachen aus:</p></li>
 </ol>
