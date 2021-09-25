@@ -252,7 +252,7 @@ plot(x = baselers$groesse,
     <img src="image/hex-dplyr.png"height=160px style="opacity:.2"></img>
     </td>
     <td bgcolor="white">
-    <img src="image/hex-tidyr.png"height=160px stylele="opacity:.2"></img>
+    <img src="image/hex-tidyr.png"height=160px style="opacity:.2"></img>
     </td>
     <td bgcolor="white">
     <img src="image/hex-readr.png"height=160px style="opacity:.2"></img>
